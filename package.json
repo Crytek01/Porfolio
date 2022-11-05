@@ -2,6 +2,9 @@
   "name": "portfolio",
   "version": "1.0.0",
   "description": "Starter file for Portfolio",
+  "engines": {
+    "node": "16.14.2"
+  },
   "scripts": {
     "start": "cd server && npm start",
     "client:init": "cd client && npm i && npm run build && cd ..",
