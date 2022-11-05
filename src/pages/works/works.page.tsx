@@ -1,19 +1,19 @@
 import { FunctionComponent } from 'react';
-import { Card } from '../../components/common/card/card.component';
+import slugify from 'slugify';
+
+import { Card } from '../../common/components/card/card.component';
+import { ArticleContainer } from '../../common/components/containers/article/article.component';
+import { Spacer } from '../../common/components/spacer/spacer.component';
+import { withStandartAnimation } from '../../common/hocs/standart-animation.hoc';
+import { useWorksService } from '../../contexts/works/works.service';
+
 import {
-  ArticleContainer,
   GridContainer,
   LinkWrapper,
   SectionContainer,
   SubTitle,
   Title,
 } from './works.styles';
-
-import slugify from 'slugify';
-
-import { withStandartAnimaton } from '../../hocs/standart-animation.hoc';
-
-import { useWorksService } from '../../contexts/works/works.service';
 
 const WorksPage: FunctionComponent = () => {
   const worksService = useWorksService();
@@ -24,8 +24,12 @@ const WorksPage: FunctionComponent = () => {
         <Title>My Works</Title>
       </header>
 
+      <Spacer size={5} />
+
       <SectionContainer>
         <SubTitle>Javascript / TS / React</SubTitle>
+
+        <Spacer size={6} />
 
         <GridContainer>
           {worksService.works.map(({ title, ...props }) => (
@@ -44,4 +48,4 @@ const WorksPage: FunctionComponent = () => {
   );
 };
 
-export default withStandartAnimaton(WorksPage);
+export default withStandartAnimation(WorksPage);

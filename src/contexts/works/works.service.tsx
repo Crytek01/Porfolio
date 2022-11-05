@@ -1,4 +1,5 @@
 import { createContext, FunctionComponent, useContext, useState } from 'react';
+
 import { works as worksStub } from './stub/works';
 
 export interface IImage {
@@ -20,6 +21,7 @@ export interface IWork {
   description: string;
   information: string;
   githubUrl: string;
+  websiteUrl: string;
   technologyStack: string[];
   platform: string;
   details: string;

@@ -1,4 +1,5 @@
 import { FunctionComponent } from 'react';
+
 import { Spinner, SpinnerContainer } from './loading.styles';
 
 interface ILoadingPage {

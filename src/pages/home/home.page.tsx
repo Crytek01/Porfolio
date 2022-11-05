@@ -1,14 +1,13 @@
-import { withStandartAnimaton } from '../../hocs/standart-animation.hoc';
-import { useMediaQuery } from '../../hooks/media-query/use-media-query.hook';
+import { ArticleContainer } from '../../common/components/containers/article/article.component';
+import { Spacer } from '../../common/components/spacer/spacer.component';
+import { withStandartAnimation } from '../../common/hocs/standart-animation.hoc';
+import { useMediaQuery } from '../../common/hooks/media-query/use-media-query.hook';
+
 import {
-  ArchivementText,
-  ArticleContainer,
   BiographyBoldText,
   BiographyItem,
   BiographyList,
-  BiographyText,
   DeveloperRoles,
-  SectionContainer,
   SectionText,
   SectionTitle,
   Title,
@@ -21,94 +20,100 @@ const HomePage = () => {
     <ArticleContainer>
       <header>
         <Title>Erick Badilla</Title>
+        <Spacer size={3} />
 
         <DeveloperRoles>
           Software Developer{isMobile && <br />} (Javascript | Typescript |
           React | Node)
         </DeveloperRoles>
       </header>
+      <Spacer size={6} />
 
-      <SectionContainer>
+      <section>
         <SectionTitle>About me:</SectionTitle>
+        <Spacer size={3} />
+
         <SectionText>
           Hi I am Erick Badilla. I am a pragmatic and self-taught React /
           Angular developer looking to work with a great team to solve
           challenging problems. I primarily focus on writing clean, elegant, and
           efficient code with wide-open proficiency in JavaScript, Typescript,
-          HTML, and Sass
+          HTML, and Sass.
         </SectionText>
-      </SectionContainer>
+      </section>
+      <Spacer size={5} />
 
-      <SectionContainer>
+      <section>
         <SectionTitle>Biography:</SectionTitle>
+        <Spacer size={3} />
 
         <BiographyList>
           <BiographyItem>
             <BiographyBoldText>2022</BiographyBoldText>
-            <BiographyText>
-              Worked in Cecropia as Software Developer.
-            </BiographyText>
+            <SectionText>Worked in Cecropia as Software Developer.</SectionText>
           </BiographyItem>
 
           <BiographyItem>
             <BiographyBoldText>2022</BiographyBoldText>
-            <BiographyText>
+            <SectionText>
               Worked in Accenture as Web Developer Analyst.
-            </BiographyText>
+            </SectionText>
           </BiographyItem>
 
           <BiographyItem>
             <BiographyBoldText>2021</BiographyBoldText>
-            <BiographyText>
+            <SectionText>
               Completed studies at Universidad Nacional of Costa Rica.
-            </BiographyText>
+            </SectionText>
           </BiographyItem>
 
           <BiographyItem>
             <BiographyBoldText>2021</BiographyBoldText>
-            <BiographyText>
+            <SectionText>
               Entered as an Intern in Gorilla Logic as an Angular Developer for
               6 months.
-            </BiographyText>
+            </SectionText>
           </BiographyItem>
 
           <BiographyItem>
             <BiographyBoldText>2016</BiographyBoldText>
-            <BiographyText>
+            <SectionText>
               Began studies at Universidad Nacional of Costa Rica in Information
               Systems Engineering.
-            </BiographyText>
+            </SectionText>
           </BiographyItem>
         </BiographyList>
-      </SectionContainer>
+      </section>
+      <Spacer size={5} />
 
-      <SectionContainer>
+      <section>
         <SectionTitle>Archivements:</SectionTitle>
+        <Spacer size={3} />
 
         <BiographyList>
           <BiographyItem>
-            <ArchivementText>
+            <SectionText>
               I Created a SWI Prolog transpiler from Java to Kotlin alike syntax
               in College.
-            </ArchivementText>
+            </SectionText>
           </BiographyItem>
 
           <BiographyItem>
-            <ArchivementText>
+            <SectionText>
               In one of my jobs I worked and learned Angular in a large project
               of private equity management software.
-            </ArchivementText>
+            </SectionText>
           </BiographyItem>
 
           <BiographyItem>
-            <ArchivementText>
+            <SectionText>
               Created a e-commerce website with React and Firebase.
-            </ArchivementText>
+            </SectionText>
           </BiographyItem>
         </BiographyList>
-      </SectionContainer>
+      </section>
     </ArticleContainer>
   );
 };
 
-export default withStandartAnimaton(HomePage);
+export default withStandartAnimation(HomePage);

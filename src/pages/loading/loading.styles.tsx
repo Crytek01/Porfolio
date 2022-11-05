@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import { Spin } from '../../components/common/spinner/spinner.styles';
+import { Spin } from '../../common/components/spinner/spinner.styles';
 
 interface ISpinner {
   top: number;

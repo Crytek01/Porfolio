@@ -1,7 +1,9 @@
 import styled, { css } from 'styled-components';
 
-export const Article = styled.article`
-  padding: 4.8rem 0 9.6rem 0;
+import { ArticleContainer } from '../../../../common/components/containers/article/article.component';
+import { Typography } from '../../../../common/components/typography/typography.component';
+
+export const Article = styled(ArticleContainer)`
   margin: 0 auto;
   max-width: 50rem;
 `;
@@ -11,8 +13,6 @@ export const ImageContainer = styled.picture`
   justify-content: center;
   width: clamp(15rem, 100%, 50rem);
   height: auto;
-
-  margin-bottom: 2.4rem;
 `;
 
 const imageDefaultStyles = css`
@@ -29,12 +29,12 @@ export const PreviewImage = styled.img`
   ${imageDefaultStyles}
 `;
 
-export const Description = styled.p`
-  font-size: 1.6rem;
-  line-height: 1.6;
-
-  margin-bottom: 4rem;
-  text-align: justify;
+export const Description = styled(Typography).attrs({
+  size: 'b3',
+  lineHeight: 1.6,
+  align: 'justify',
+})`
+  letter-spacing: -0.04rem;
 `;
 
 export const KeyPointsContainer = styled.ul`
@@ -42,8 +42,6 @@ export const KeyPointsContainer = styled.ul`
   flex-direction: column;
 
   gap: 1rem;
-
-  margin-bottom: 4rem;
 `;
 
 export const KeyPoint = styled.li`
@@ -58,37 +56,18 @@ export const KeyPoint = styled.li`
   @media (max-width: 27rem) {
     flex-direction: column;
     align-items: flex-start;
-    gap: 1.2rem;
+    gap: ${({ theme: { spacing } }) => spacing[3]};
   }
 `;
 
-export const Point = styled.p`
-  font-size: 1.4rem;
+export const Point = styled(Typography).attrs({
+  size: 'b3',
+})`
+  letter-spacing: -0.04rem;
 `;
 
-export const ExternalLink = styled.a`
-  &:visited,
-  &:link {
-    font-size: 1.4rem;
-    color: #6e9cf8;
-
-    text-decoration: none;
-    cursor: pointer;
-  }
-
-  &:hover,
-  &:active {
-    color: #487be0;
-  }
-`;
-
-export const PreviewTitle = styled.h3`
-  font-size: 1.8rem;
-  font-weight: 600;
-
-  color: #444;
-
-  display: inline-block;
-
-  margin-bottom: 2rem;
-`;
+export const PreviewTitle = styled(Typography).attrs({
+  size: 'h4',
+  forwardAs: 'h4',
+  weight: 'semiBold',
+})``;

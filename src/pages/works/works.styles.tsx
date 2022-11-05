@@ -1,10 +1,8 @@
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-import { CardContainer } from '../../components/common/card/card.styles';
 
-export const ArticleContainer = styled.article`
-  padding: 4.8rem 0 9.6rem 0;
-`;
+import { CardContainer } from '../../common/components/card/card.styles';
+import { Typography } from '../../common/components/typography/typography.component';
 
 export const SectionContainer = styled.section`
   &:not(:last-child) {
@@ -12,18 +10,24 @@ export const SectionContainer = styled.section`
   }
 `;
 
-export const Title = styled.h2`
-  font-size: 2rem;
-  font-weight: 600;
-
-  margin-bottom: 4rem;
+export const Title = styled(Typography).attrs({
+  forwardedAs: 'h2',
+  size: 'b1',
+  weight: 'semiBold',
+})`
+  @media (max-width: 35.5em) {
+    text-align: center;
+  }
 `;
 
-export const SubTitle = styled.h3`
-  font-size: 1.8rem;
-  font-weight: 500;
-
-  margin-bottom: 2.2rem;
+export const SubTitle = styled(Typography).attrs({
+  forwardAs: 'h3',
+  size: 'b2',
+  weight: 'medium',
+})`
+  @media (max-width: 35.5em) {
+    text-align: center;
+  }
 `;
 
 export const GridContainer = styled.div`
@@ -33,7 +37,7 @@ export const GridContainer = styled.div`
 
   justify-content: space-between;
 
-  gap: 2rem;
+  gap: ${({ theme: { spacing } }) => spacing[5]};
 
   flex: 0 0 23rem;
 

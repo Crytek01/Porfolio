@@ -1,3 +1,8 @@
 export const colors = {
-  primary: '#efe7db',
+  text: {
+    boldGrey: '#333',
+    semiBoldGrey: '#444',
+    standartGrey: '#555',
+    lightGrey: '#666',
+  },
 };

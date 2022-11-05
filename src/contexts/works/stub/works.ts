@@ -19,6 +19,7 @@ export const works: IWork[] = [
     },
     description: 'A description of a project',
     githubUrl: 'https://github.com/Crytek01/e-clothing-store',
+    websiteUrl: 'https://e-commerce-app-live.herokuapp.com/',
     technologyStack: ['Javascript', 'React', 'Redux', 'Firebase'],
     platform: 'Web',
     previewImage: [
@@ -72,6 +73,7 @@ export const works: IWork[] = [
     },
     description: 'A description of a project',
     githubUrl: 'https://github.com/Crytek01/Natours',
+    websiteUrl: 'https://e-natours-app.herokuapp.com/',
     technologyStack: [
       'Javascript',
       'Node.js',
@@ -112,6 +114,7 @@ export const works: IWork[] = [
     description: 'A description of a project',
     githubUrl: 'https://github.com/Crytek01/MealsToGoApp',
     technologyStack: ['Typescript', 'React Native', 'Node.js', 'Firebase'],
+    websiteUrl: '',
     platform: 'Mobile',
     previewImage: [
       {

@@ -1,67 +1,65 @@
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 
-const defaultTextCSS = css`
-  font-size: 1.6rem;
-  line-height: 1.6;
+import {
+  styleSize,
+  Typography,
+} from '../../common/components/typography/typography.component';
 
+export const Title = styled(Typography).attrs({
+  size: 'h1',
+  forwardedAs: 'h1',
+  weight: 'bold',
+})`
   @media (max-width: 33em) {
-    font-size: 1.4rem;
+    font-size: ${styleSize.h2};
+  }
+
+  @media (max-width: 19em) {
+    font-size: ${styleSize.h3};
+  }
+`;
+
+export const DeveloperRoles = styled(Typography).attrs({
+  size: 'b3',
+})`
+  @media (max-width: 33em) {
+    font-size: ${styleSize.b4};
     line-height: 1.4;
   }
-`;
 
-export const ArticleContainer = styled.article`
-  padding: 4.8rem 0 9.6rem 0;
-`;
-
-export const Title = styled.h1`
-  font-size: 3rem;
-  font-weight: 700;
-
-  margin-bottom: 1.6rem;
-
-  @media (max-width: 33em) {
-    font-size: 2.4rem;
+  @media (max-width: 19em) {
+    font-size: ${styleSize.b5};
   }
 `;
 
-export const DeveloperRoles = styled.span`
-  display: block;
-
-  font-size: 1.6rem;
-  font-weight: 400;
-
-  margin-bottom: 4rem;
-
-  @media (max-width: 33em) {
-    font-size: 1.4rem;
-    line-height: 1.4;
-  }
-`;
-
-export const SectionContainer = styled.section`
-  &:not(:last-child) {
-    margin: 4rem 0;
-  }
-`;
-
-export const SectionTitle = styled.h2`
+export const SectionTitle = styled(Typography).attrs({
+  size: 'h2',
+  weight: 'semiBold',
+})`
   display: inline-block;
-
-  font-size: 2.4rem;
-  font-weight: 600;
-
-  border-bottom: 2px solid #777;
-
-  margin-bottom: 2rem;
+  border-bottom: 2px solid ${({ theme: { colors } }) => colors.text.lightGrey};
 
   @media (max-width: 33em) {
-    font-size: 2rem;
+    font-size: ${styleSize.h3};
+  }
+
+  @media (max-width: 19em) {
+    font-size: ${styleSize.h4};
   }
 `;
 
-export const SectionText = styled.p`
-  ${defaultTextCSS}
+export const SectionText = styled(Typography).attrs({
+  size: 'b3',
+  lineHeight: 1.6,
+})`
+  @media (max-width: 33em) {
+    font-size: ${styleSize.b4};
+    line-height: 1.4;
+  }
+
+  @media (max-width: 19em) {
+    font-size: ${styleSize.b5};
+  }
 `;
 
 export const BiographyTextContainer = styled.div`
@@ -84,7 +82,6 @@ export const BiographyList = styled.ul`
 export const BiographyItem = styled.li`
   display: flex;
   align-items: flex-start;
-
   list-style: none;
 
   &:not(:last-child) {
@@ -92,26 +89,20 @@ export const BiographyItem = styled.li`
   }
 `;
 
-export const BiographyBoldText = styled.span`
-  ${defaultTextCSS}
-
-  display: block;
-
-  align-self: flex-start;
-
-  font-weight: 700;
-  font-size: 1.4rem;
+export const BiographyBoldText = styled(Typography).attrs({
+  forwardAs: 'span',
+  size: 'b4',
+  weight: 'bold',
+  lineHeight: 1.7,
+})`
   margin-right: 1.4rem;
-`;
 
-export const BiographyText = styled.p`
-  ${defaultTextCSS}
-`;
+  @media (max-width: 33em) {
+    font-size: ${styleSize.b5};
+    line-height: 1.4;
+  }
 
-export const ArchivementText = styled.p`
-  ${defaultTextCSS}
-
-  &:not(:last-child) {
-    margin-bottom: 1rem;
+  @media (max-width: 19em) {
+    font-size: ${styleSize.b6};
   }
 `;

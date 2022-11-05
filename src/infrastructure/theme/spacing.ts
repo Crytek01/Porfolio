@@ -1,0 +1,18 @@
+export const spacing: string[] = [
+  '0.2rem',
+  '0.4rem',
+  '0.8rem',
+  '1.2rem',
+  '1.6rem',
+  '2.4rem',
+  '3.2rem',
+  '4.8rem',
+  '6.4rem',
+  '8rem',
+  '9.6rem',
+  '12.8rem',
+  '22.4rem',
+  '35.2rem',
+  '57.6rem',
+  '92.8rem',
+];

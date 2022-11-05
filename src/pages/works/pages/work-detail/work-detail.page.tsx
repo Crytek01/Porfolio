@@ -1,19 +1,19 @@
 import { useState } from 'react';
 import { useParams } from 'react-router-dom';
-import { Tag } from '../../../../components/common/tag/tag.component';
+
+import { ExternalLink } from '../../../../common/components/external-link/external-link.comonent';
+import { Spacer } from '../../../../common/components/spacer/spacer.component';
+import { Tag } from '../../../../common/components/tag/tag.component';
+import { withEaseInAnimation } from '../../../../common/hocs/left-right-animation';
+import { separateText } from '../../../../common/utils/text/text.util';
 import {
   IWork,
   useWorksService,
 } from '../../../../contexts/works/works.service';
-import { withEaseInAnimation } from '../../../../hocs/left-right-animation';
-import {
-  sanitizeHTMLText,
-  separateText,
-} from '../../../../utils/text/text.util';
+
 import {
   Article,
   Description,
-  ExternalLink,
   ImageContainer,
   KeyPoint,
   KeyPointsContainer,
@@ -42,17 +42,21 @@ const WorkDetail = () => {
         />
         <LogoImage src={work?.logoImage.basic.source} />
       </ImageContainer>
+      <Spacer size={5} />
 
-      <Description
-        dangerouslySetInnerHTML={{
-          __html: sanitizeHTMLText(work?.details ?? ''),
-        }}
-      ></Description>
+      <Description innerHtml={work?.details} />
+      <Spacer size={6} />
 
       <KeyPointsContainer>
         <KeyPoint>
           <Tag>Link</Tag>
-          <ExternalLink href={work?.githubUrl}>Github</ExternalLink>
+          <Point>
+            <ExternalLink href={work?.githubUrl}>Github</ExternalLink>
+          </Point>
+
+          <Point>
+            <ExternalLink href={work?.websiteUrl}>Website</ExternalLink>
+          </Point>
         </KeyPoint>
 
         <KeyPoint>
@@ -65,8 +69,10 @@ const WorkDetail = () => {
           <Point>{separateText(work?.technologyStack, '|')}</Point>
         </KeyPoint>
       </KeyPointsContainer>
+      <Spacer size={6} />
 
       <PreviewTitle>Preview Images: </PreviewTitle>
+      <Spacer size={3} />
 
       {work?.previewImage.map((image) => (
         <ImageContainer key={image.basic.source}>

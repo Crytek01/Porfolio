@@ -1,15 +1,21 @@
 import { BrowserRouter } from 'react-router-dom';
-import './App.css';
+import { ThemeProvider } from 'styled-components';
+
 import { Navigation } from './infrastructure/navigation';
+import { theme } from './infrastructure/theme';
 import { StandartLayout } from './layouts/grid-layout/standart.layout';
+
+import './App.css';
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <StandartLayout>
-          <Navigation />
-        </StandartLayout>
+        <ThemeProvider theme={theme}>
+          <StandartLayout>
+            <Navigation />
+          </StandartLayout>
+        </ThemeProvider>
       </BrowserRouter>
     </div>
   );
