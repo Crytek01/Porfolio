@@ -1,20 +1,5 @@
 import styled from 'styled-components';
 
-// interface IHeader {
-//   isVisible: boolean;
-// }
-
-// const navbarVisible = css`
-//   z-index: 999;
-//   background-color: #aaa;
-// `;
-
-// const navbarNotVisible = css`
-//   background-color: red;
-//   position: fixed;
-//   top: 0;
-// `;
-
 export const Header = styled.header`
   width: 100%;
   height: ${({ theme: { spacing } }) => spacing[8]};
