@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "description": "Starter file for Portfolio",
   "scripts": {
-    "start": "cd server && yarn start",
-    "client:init": "cd client && yarn && yarn build && cd ..",
-    "server:init": "cd server && yarn && yarn build:release && cd ..",
-    "heroku-postbuild": "yarn client:init && yarn server:init"
+    "start": "cd server && npm start",
+    "client:init": "cd client && npm i && npm run build && cd ..",
+    "server:init": "cd server && npm i && npm run build:release && cd ..",
+    "heroku-postbuild": "npm run client:init && npm run server:init"
   },
   "repository": {
     "type": "git",
