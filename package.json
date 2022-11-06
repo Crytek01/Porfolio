@@ -1,0 +1,22 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "install": "cd client && npm install --dev && cd ../server && npm install --dev",
+    "build": "cd client && npm run build && cd ../server && npm run build:release",
+    "start": "cd server/build && node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Crytek01/Porfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Crytek01/Porfolio/issues"
+  },
+  "homepage": "https://github.com/Crytek01/Porfolio#readme"
+}
