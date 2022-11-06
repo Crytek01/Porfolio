@@ -5,9 +5,7 @@ import rateLimit from 'express-rate-limit';
 import xss from 'xss-clean';
 import compression from 'compression';
 
-import { fileURLToPath } from 'url';
-import path, { dirname } from 'path';
-const __dirname = dirname(fileURLToPath(import.meta.url));
+import path from 'path';
 
 const app = express();
 
@@ -34,9 +32,9 @@ app.use(express.urlencoded({ extended: true, limit: '10kb' }));
 app.use(compression());
 
 if (process.env.NODE_ENV === 'production') {
-  app.use(express.static(path.join(__dirname, '../../client/dist')));
+  app.use(express.static(path.resolve('/client/dist')));
   app.get('*', function (_request, response) {
-    response.sendFile(path.join(__dirname, '../../client/dist/index.html'));
+    response.sendFile(path.resolve('/client/dist', 'index.html'));
   });
 }
 
