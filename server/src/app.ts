@@ -32,11 +32,9 @@ app.use(express.urlencoded({ extended: true, limit: '10kb' }));
 app.use(compression());
 
 if (process.env.NODE_ENV === 'production') {
-  app.use(express.static(path.resolve('../../client/dist')));
+  app.use(express.static('/app/client/dist'));
   app.get('*', function (_request, response) {
-    response.sendFile(
-      path.join(path.resolve('../../client/dist'), 'index.html'),
-    );
+    response.sendFile(path.join('/app/client/dist', 'index.html'));
   });
 }
 
