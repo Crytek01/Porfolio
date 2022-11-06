@@ -6,6 +6,7 @@
     "node": "16.14.2"
   },
   "scripts": {
+    "start": "npm start --prefix server",
     "build": "npm run client:build && npm run server:build",
     "heroku-postbuild": "npm run client:init && npm run server:init",
     "client:build": "cd client && npm run build && cd ..",
