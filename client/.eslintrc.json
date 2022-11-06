@@ -11,7 +11,7 @@
     "simple-import-sort/exports": "error"
   },
   "parserOptions": {
-    "project": "tsconfig.json"
+    "project": "../client/tsconfig.json"
   },
   "overrides": [
     {

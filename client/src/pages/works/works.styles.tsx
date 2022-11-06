@@ -21,7 +21,7 @@ export const Title = styled(Typography).attrs({
 `;
 
 export const SubTitle = styled(Typography).attrs({
-  forwardAs: 'h3',
+  forwardedAs: 'h3',
   size: 'b2',
   weight: 'medium',
 })`

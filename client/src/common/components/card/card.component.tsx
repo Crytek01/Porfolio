@@ -21,11 +21,11 @@ export const Card: FunctionComponent<ICard> = ({
 }) => (
   <CardContainer>
     <picture>
-      <source srcSet={logoImage.basic.source} type={logoImage.basic.type} />
       <source
         srcSet={logoImage.optimized.source}
         type={logoImage.optimized.type}
       />
+      <source srcSet={logoImage.basic.source} type={logoImage.basic.type} />
       <CardImage alt={description} src={logoImage.basic.source} />
     </picture>
 
@@ -33,9 +33,8 @@ export const Card: FunctionComponent<ICard> = ({
       <Typography as="h3" size="h3" weight="medium" align="center">
         {title}
       </Typography>
-
       <Spacer size={2} />
-      {/* <CardTitle>{title}</CardTitle> */}
+
       <Typography size="b4" align="center" lineHeight={1.4}>
         {information}
       </Typography>

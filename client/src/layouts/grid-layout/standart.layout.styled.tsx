@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 
+import { Typography } from '../../common/components/typography/typography.component';
+
 export const Header = styled.header`
   width: 100%;
   height: ${({ theme: { spacing } }) => spacing[8]};
@@ -14,10 +16,8 @@ export const Header = styled.header`
   background-color: #fff;
 `;
 
-export const Footer = styled.footer`
-  text-align: center;
-
-  font-size: ${({ theme: { fontSize } }) => fontSize[1]};
-
-  color: #777;
-`;
+export const FooterText = styled(Typography).attrs({
+  size: 'b5',
+  color: 'lightGrey',
+  align: 'center',
+})``;

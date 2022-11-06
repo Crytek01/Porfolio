@@ -8,7 +8,7 @@ const tableQuery = '(max-width: 31.5em)';
 const mobileQuery = '(max-width: 28em)';
 
 export const Title = styled(Typography).attrs({
-  forwardAs: 'h1',
+  forwardedAs: 'h1',
   size: 'h3',
   weight: 'semiBold',
 })`
@@ -22,7 +22,7 @@ export const Title = styled(Typography).attrs({
 `;
 
 export const SubTitle = styled(Typography).attrs({
-  forwardAs: 'h4',
+  forwardedAs: 'h4',
   size: 'h4',
   weight: 'medium',
 })`
@@ -35,7 +35,7 @@ export const SubTitle = styled(Typography).attrs({
 `;
 
 export const Text = styled(Typography).attrs({
-  forwardAs: 'p',
+  forwardedAs: 'p',
   size: 'b3',
   weight: 'regular',
   lineHeight: 1.6,

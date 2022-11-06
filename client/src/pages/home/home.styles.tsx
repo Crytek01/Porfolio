@@ -90,7 +90,7 @@ export const BiographyItem = styled.li`
 `;
 
 export const BiographyBoldText = styled(Typography).attrs({
-  forwardAs: 'span',
+  forwardedAs: 'span',
   size: 'b4',
   weight: 'bold',
   lineHeight: 1.7,

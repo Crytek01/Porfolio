@@ -33,26 +33,6 @@ export const works: IWork[] = [
           type: 'image/webp',
         },
       },
-      // {
-      //   basic: {
-      //     source: "/images/e-commerce-preview-2.png",
-      //     type: "image/png",
-      //   },
-      //   optimized: {
-      //     source: "/images/e-commerce-preview-2.webp",
-      //     type: "image/webp",
-      //   },
-      // },
-      // {
-      //   basic: {
-      //     source: "/images/e-commerce-preview-3.png",
-      //     type: "image/png",
-      //   },
-      //   optimized: {
-      //     source: "/images/e-commerce-preview-3.webp",
-      //     type: "image/webp",
-      //   },
-      // },
     ],
   },
   {
@@ -63,11 +43,11 @@ export const works: IWork[] = [
       "It's a tour app base on Node.js based on Express, Mongoose, and Pug for reserving tours written with Javascript.<br/><br/>The app uses SendGrid for sending emails, Mongo DB Atlas as a database, and Stripe for transactions.",
     logoImage: {
       basic: {
-        source: '/images/tours-app.png',
+        source: '/images/tours-app/tours-app.png',
         type: 'image/png',
       },
       optimized: {
-        source: '/images/tours-app.webp',
+        source: '/images/tours-app/tours-app.webp',
         type: 'image/webp',
       },
     },
@@ -85,11 +65,11 @@ export const works: IWork[] = [
     previewImage: [
       {
         basic: {
-          source: '/images/tours-app-preview-1.PNG',
+          source: '/images/tours-app/tours-app-preview-1.png',
           type: 'image/png',
         },
         optimized: {
-          source: '/images/tours-app-preview-1.webp',
+          source: '/images/tours-app/tours-app-preview-1.webp',
           type: 'image/webp',
         },
       },
@@ -103,11 +83,11 @@ export const works: IWork[] = [
       "It's a Meals Mobile app based on React Native and Firebase.<br/><br/>The app uses Firebase for auth, backend functions, and Google API for Geo Locations, Restaurant Photos, and Google Maps.",
     logoImage: {
       basic: {
-        source: '/images/meals-app.png',
+        source: '/images/meals-app/meals-app.png',
         type: 'image/png',
       },
       optimized: {
-        source: '/images/meals-app.webp',
+        source: '/images/meals-app/meals-app.webp',
         type: 'image/webp',
       },
     },
@@ -119,11 +99,11 @@ export const works: IWork[] = [
     previewImage: [
       {
         basic: {
-          source: '/images/meals-app-preview-1.png',
+          source: '/images/meals-app/meals-app-preview-1.png',
           type: 'image/png',
         },
         optimized: {
-          source: '/images/meals-app-preview-1.webp',
+          source: '/images/meals-app/meals-app-preview-1.webp',
           type: 'image/webp',
         },
       },

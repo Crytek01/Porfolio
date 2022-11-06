@@ -68,6 +68,6 @@ export const Point = styled(Typography).attrs({
 
 export const PreviewTitle = styled(Typography).attrs({
   size: 'h4',
-  forwardAs: 'h4',
+  forwardedAs: 'h4',
   weight: 'semiBold',
 })``;

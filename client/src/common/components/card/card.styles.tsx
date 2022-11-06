@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 
+import { Typography } from '../typography/typography.component';
+
 export const CardContainer = styled.div`
   border-radius: 11px;
   overflow: hidden;
@@ -42,19 +44,15 @@ export const TextContainer = styled.div`
   padding: 1rem 2rem;
 `;
 
-// export const CardTitle = styled.p`
-//   font-weight: ${({ theme: { fontWeight } }) => fontWeight.medium};
-//   font-size: ${({ theme: { fontSize } }) => fontSize[6]};
-//   margin-bottom: 1rem;
+export const CardTitle = styled(Typography).attrs({
+  forwardedAs: 'h3',
+  size: 'h3',
+  weight: 'medium',
+  align: 'center',
+})``;
 
-//   text-align: center;
-// `;
-
-// export const CardInformation = styled.p`
-//   font-size: ${({ theme: { fontSize } }) => fontSize[2]};
-//   line-height: 1.8;
-
-//   color: #555;
-
-//   text-align: center;
-// `;
+export const CardDescription = styled(Typography).attrs({
+  size: 'b4',
+  align: 'center',
+  lineHeight: 1.4,
+});
