@@ -35,9 +35,9 @@ app.use(express.urlencoded({ extended: true, limit: '10kb' }));
 app.use(compression());
 
 if (process.env.NODE_ENV === 'production') {
-  app.use(express.static(path.join(__dirname, '../../client/build')));
+  app.use(express.static(path.join(__dirname, '../../client/dist')));
   app.get('*', function (_request, response) {
-    response.sendFile(path.join(__dirname, '../../client/build', 'index.html'));
+    response.sendFile(path.join(__dirname, '../../client/dist', 'index.html'));
   });
 }
 
