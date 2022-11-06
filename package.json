@@ -10,7 +10,7 @@
     "build": "npm run client:build && npm run server:build",
     "heroku-postbuild": "npm run client:init && npm run server:init",
     "client:build": "cd client && npm run build && cd ..",
-    "server:build": "cd server && npm run build && cd ..",
+    "server:build": "cd server && npm run build:release && cd ..",
     "client:init": "cd client && npm i && cd ..",
     "server:init": "cd server && npm i && cd .."
   },
