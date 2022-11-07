@@ -40,6 +40,7 @@ const WorkDetail = () => {
           srcSet={work?.logoImage.basic.source}
           type={work?.logoImage.basic.type}
         />
+
         <LogoImage
           src={work?.logoImage.basic.source}
           alt="A Project Logo image"
@@ -81,8 +82,9 @@ const WorkDetail = () => {
 
       {work?.previewImage.map((image) => (
         <ImageContainer key={image.basic.source}>
-          <source srcSet={image.basic.source} type={image.basic.type} />
           <source srcSet={image.optimized.source} type={image.optimized.type} />
+          <source srcSet={image.basic.source} type={image.basic.type} />
+
           <PreviewImage
             src={image.basic.source}
             alt="A project preview image"
