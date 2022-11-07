@@ -35,6 +35,7 @@ export const DeveloperRoles = styled(Typography).attrs({
 export const SectionTitle = styled(Typography).attrs({
   size: 'h2',
   weight: 'semiBold',
+  lineHeight: 1.3,
 })`
   display: inline-block;
   border-bottom: 2px solid ${({ theme: { colors } }) => colors.text.lightGrey};

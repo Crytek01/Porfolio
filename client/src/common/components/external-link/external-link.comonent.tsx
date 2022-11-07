@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const ExternalLink = styled.a`
   &:visited,
   &:link {
-    color: #6e9cf8;
+    color: #1976d2;
 
     text-decoration: none;
     cursor: pointer;
@@ -11,6 +11,6 @@ export const ExternalLink = styled.a`
 
   &:hover,
   &:active {
-    color: #487be0;
+    color: #6e9cf8;
   }
 `;

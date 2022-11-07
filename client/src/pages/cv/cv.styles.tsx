@@ -6,31 +6,39 @@ import { Typography } from '../../common/components/typography/typography.compon
 
 const tableQuery = '(max-width: 31.5em)';
 const mobileQuery = '(max-width: 28em)';
+const smallMobileQuery = '(max-width: 22em)';
 
 export const Title = styled(Typography).attrs({
-  forwardedAs: 'h1',
-  size: 'h3',
+  forwardedAs: 'h2',
+  size: 'h2',
   weight: 'semiBold',
 })`
   @media ${tableQuery} {
-    font-size: ${({ theme: { fontSize } }) => fontSize[4]};
+    font-size: ${({ theme: { fontSize } }) => fontSize[5]};
   }
 
   @media ${mobileQuery} {
+    font-size: ${({ theme: { fontSize } }) => fontSize[4]};
+  }
+
+  @media ${smallMobileQuery} {
     font-size: ${({ theme: { fontSize } }) => fontSize[3]};
   }
 `;
 
 export const SubTitle = styled(Typography).attrs({
-  forwardedAs: 'h4',
-  size: 'h4',
+  forwardedAs: 'h3',
+  size: 'h3',
   weight: 'medium',
 })`
   @media ${tableQuery} {
-    font-size: ${({ theme: { fontSize } }) => fontSize[3]};
+    font-size: ${({ theme: { fontSize } }) => fontSize[2]};
   }
   @media ${mobileQuery} {
     font-size: ${({ theme: { fontSize } }) => fontSize[2]};
+  }
+  @media ${smallMobileQuery} {
+    font-size: ${({ theme: { fontSize } }) => fontSize[1]};
   }
 `;
 
@@ -46,6 +54,10 @@ export const Text = styled(Typography).attrs({
   }
   @media ${mobileQuery} {
     font-size: ${({ theme: { fontSize } }) => fontSize[1]};
+  }
+
+  @media ${smallMobileQuery} {
+    font-size: ${({ theme: { fontSize } }) => fontSize[0]};
   }
 `;
 

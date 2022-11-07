@@ -33,14 +33,17 @@ const WorkDetail = () => {
     <Article>
       <ImageContainer>
         <source
-          srcSet={work?.logoImage.basic.source}
-          type={work?.logoImage.basic.type}
-        />
-        <source
           srcSet={work?.logoImage.optimized.source}
           type={work?.logoImage.optimized.type}
         />
-        <LogoImage src={work?.logoImage.basic.source} />
+        <source
+          srcSet={work?.logoImage.basic.source}
+          type={work?.logoImage.basic.type}
+        />
+        <LogoImage
+          src={work?.logoImage.basic.source}
+          alt="A Project Logo image"
+        />
       </ImageContainer>
       <Spacer size={5} />
 
@@ -54,9 +57,11 @@ const WorkDetail = () => {
             <ExternalLink href={work?.githubUrl}>Github</ExternalLink>
           </Point>
 
-          <Point>
-            <ExternalLink href={work?.websiteUrl}>Website</ExternalLink>
-          </Point>
+          {work?.websiteUrl ? (
+            <Point>
+              <ExternalLink href={work?.websiteUrl}>Website</ExternalLink>
+            </Point>
+          ) : null}
         </KeyPoint>
 
         <KeyPoint>
@@ -78,7 +83,10 @@ const WorkDetail = () => {
         <ImageContainer key={image.basic.source}>
           <source srcSet={image.basic.source} type={image.basic.type} />
           <source srcSet={image.optimized.source} type={image.optimized.type} />
-          <PreviewImage src={image.basic.source} />
+          <PreviewImage
+            src={image.basic.source}
+            alt="A project preview image"
+          />
         </ImageContainer>
       ))}
     </Article>

@@ -1,7 +1,13 @@
 import styled, { css } from 'styled-components';
 
 import { ArticleContainer } from '../../../../common/components/containers/article/article.component';
-import { Typography } from '../../../../common/components/typography/typography.component';
+import {
+  styleSize,
+  Typography,
+} from '../../../../common/components/typography/typography.component';
+
+const tabletBreakpoint = '(max-width: 30em)';
+const mobileBreakpoint = '(max-width: 27em)';
 
 export const Article = styled(ArticleContainer)`
   margin: 0 auto;
@@ -31,10 +37,18 @@ export const PreviewImage = styled.img`
 
 export const Description = styled(Typography).attrs({
   size: 'b3',
-  lineHeight: 1.6,
+  lineHeight: 1.5,
   align: 'justify',
 })`
   letter-spacing: -0.04rem;
+
+  @media ${tabletBreakpoint} {
+    font-size: ${styleSize.b4};
+  }
+
+  @media ${mobileBreakpoint} {
+    font-size: ${styleSize.b5};
+  }
 `;
 
 export const KeyPointsContainer = styled.ul`
@@ -53,7 +67,7 @@ export const KeyPoint = styled.li`
   align-items: center;
   gap: 1rem;
 
-  @media (max-width: 27rem) {
+  @media ${mobileBreakpoint} {
     flex-direction: column;
     align-items: flex-start;
     gap: ${({ theme: { spacing } }) => spacing[3]};
@@ -61,13 +75,18 @@ export const KeyPoint = styled.li`
 `;
 
 export const Point = styled(Typography).attrs({
-  size: 'b3',
+  size: 'b4',
 })`
-  letter-spacing: -0.04rem;
+  @media ${tabletBreakpoint} {
+    font-size: ${styleSize.b5};
+  padding: ${({ theme: { spacing } }) => spacing[1]};
+  }
 `;
 
 export const PreviewTitle = styled(Typography).attrs({
   size: 'h4',
   forwardedAs: 'h4',
   weight: 'semiBold',
-})``;
+})`
+  padding: ${({ theme: { spacing } }) => spacing[0]};
+`;
