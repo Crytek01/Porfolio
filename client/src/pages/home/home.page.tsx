@@ -78,7 +78,7 @@ const HomePage = () => {
           <BiographyItem>
             <BiographyBoldText>2016</BiographyBoldText>
             <SectionText>
-              I began majoring at Universidad Nacional of Costa Rica in
+              Began majoring at Universidad Nacional of Costa Rica in
               Information Systems Engineering.
             </SectionText>
           </BiographyItem>
@@ -107,7 +107,7 @@ const HomePage = () => {
 
           <BiographyItem>
             <SectionText>
-              Created a e-commerce website with React and Firebase.
+              I Created a e-commerce website with React and Firebase.
             </SectionText>
           </BiographyItem>
         </BiographyList>

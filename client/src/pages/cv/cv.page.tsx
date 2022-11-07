@@ -23,7 +23,7 @@ export const CVPage: FunctionComponent = () => {
         <SubTitle>Multiplied Solutions (Jun 2022 - Present):</SubTitle>
         <Spacer size={4} />
         <Text>
-          Worked four months on an internal project about coding interviews and
+          I Worked four months on an internal project about coding interviews and
           worked as a full-stack Node / React refactoring code, improved
           authentication backend and client-side, implemented real-time coding
           between the interviewers and the interviewee, and implemented code
@@ -39,7 +39,7 @@ export const CVPage: FunctionComponent = () => {
         <SubTitle>Accenture (Feb 2022 - Jun 2022):</SubTitle>
         <Spacer size={4} />
         <Text>
-          Worked for three months on two different client projects as a Front
+          I Worked for three months on two different client projects as a Front
           Developer with React and Angular technologies, refactoring code,
           fixing bugs, and developing new features.
           <br />
@@ -68,12 +68,12 @@ export const CVPage: FunctionComponent = () => {
         <Spacer size={4} />
 
         <Text>
-          Worked for nearly six months as a Front End Developer Intern with a
+          I Worked for nearly six months as a Front End Developer Intern with a
           Scrum agile team on a complex Angular application about private stocks
           that makes management easy and intelligent for private companies.
           <br />
           <br />
-          Worked proactively fixing bugs at the start, then worked on taking
+          I Worked proactively fixing bugs at the start, then worked on taking
           small user stories and owning the whole process responsibility, and
           then started taking complex user stories working closely with the
           Quality Assurance team and Backend team.
