@@ -70,16 +70,16 @@ const HomePage = () => {
           <BiographyItem>
             <BiographyBoldText>2021</BiographyBoldText>
             <SectionText>
-              Entered as an Intern in Gorilla Logic as an Angular Developer for
-              6 months.
+              Worked in Gorilla Logic as an Angular Developer intern for nearly
+              six months.
             </SectionText>
           </BiographyItem>
 
           <BiographyItem>
             <BiographyBoldText>2016</BiographyBoldText>
             <SectionText>
-              Began studies at Universidad Nacional of Costa Rica in Information
-              Systems Engineering.
+              I began majoring at Universidad Nacional of Costa Rica in
+              Information Systems Engineering.
             </SectionText>
           </BiographyItem>
         </BiographyList>
@@ -87,21 +87,21 @@ const HomePage = () => {
       <Spacer size={5} />
 
       <section>
-        <SectionTitle>Archivements:</SectionTitle>
+        <SectionTitle>Achievements:</SectionTitle>
         <Spacer size={3} />
 
         <BiographyList>
           <BiographyItem>
             <SectionText>
-              I Created a SWI Prolog transpiler from Java to Kotlin alike syntax
-              in College.
+              I created an SWI Prolog transpiler from Java to Kotlin alike
+              syntax in my major.
             </SectionText>
           </BiographyItem>
 
           <BiographyItem>
             <SectionText>
-              In one of my jobs I worked and learned Angular in a large project
-              of private equity management software.
+              In one of my jobs, I worked and learned Angular on a complex
+              project about private equity management software.
             </SectionText>
           </BiographyItem>
 

@@ -44,12 +44,12 @@ export const CVPage: FunctionComponent = () => {
           fixing bugs, and developing new features.
           <br />
           <br />
-          Worked on a React project developing a live quiz game app for multiple
-          people connecting simultaneously between them with AWS Amplify as a
-          backend.
+          In the React project, I worked on developing a live quiz game app for
+          multiple people connecting simultaneously between them with AWS
+          Amplify as a backend.
           <br />
           <br />
-          Worked on Angular project, fixing bugs and refactoring code.
+          In the Angular project, I worked on fixing bugs and refactoring code.
         </Text>
         <Spacer size={6} />
 
@@ -57,7 +57,7 @@ export const CVPage: FunctionComponent = () => {
         <Spacer size={3} />
 
         <RecomendationContainer>
-          <CVTag>Recomendation Letter</CVTag>
+          <CVTag>Recommendation Letter</CVTag>
           <DownloadLink
             href="/pdf/Recommendation Letter - Erick.pdf"
             download="Recommendation Letter - Erick"
