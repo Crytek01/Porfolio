@@ -1,5 +1,4 @@
 import { Typography } from '@common/components/typography/typography.component';
-import { withStandartAnimation } from '@common/hocs/standart-animation.hoc';
 import styled from 'styled-components';
 
 export const Header = styled.header`
