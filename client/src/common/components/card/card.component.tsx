@@ -20,14 +20,13 @@ export const Card: FunctionComponent<ICard> = ({
   information,
 }) => (
   <CardContainer>
-    <picture>
-      <source
-        srcSet={logoImage.optimized.source}
-        type={logoImage.optimized.type}
-      />
-      <source srcSet={logoImage.basic.source} type={logoImage.basic.type} />
-      <CardImage alt={description} src={logoImage.basic.source} />
-    </picture>
+    <CardImage
+      alt={description}
+      src={logoImage.basic.source}
+      type={logoImage.basic.type}
+      optimizedSrc={logoImage.optimized.source}
+      optimizedType={logoImage.optimized.type}
+    />
 
     <TextContainer>
       <Typography as="h3" size="h3" weight="medium" align="center">

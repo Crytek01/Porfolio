@@ -31,21 +31,14 @@ const WorkDetail = () => {
 
   return (
     <Article>
-      <ImageContainer>
-        <source
-          srcSet={work?.logoImage.optimized.source}
-          type={work?.logoImage.optimized.type}
-        />
-        <source
-          srcSet={work?.logoImage.basic.source}
-          type={work?.logoImage.basic.type}
-        />
+      <LogoImage
+        alt="A Project Logo image"
+        src={work?.logoImage.basic.source}
+        type={work?.logoImage.basic.type}
+        optimizedSrc={work?.logoImage.optimized.source}
+        optimizedType={work?.logoImage.optimized.type}
+      />
 
-        <LogoImage
-          src={work?.logoImage.basic.source ?? ''}
-          alt="A Project Logo image"
-        />
-      </ImageContainer>
       <Spacer size={5} />
 
       <Description innerHtml={work?.details} />
