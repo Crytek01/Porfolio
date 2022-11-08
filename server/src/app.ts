@@ -4,6 +4,7 @@ import helmet from 'helmet';
 import rateLimit from 'express-rate-limit';
 import xss from 'xss-clean';
 import compression from 'compression';
+import enforce from 'express-sslify';
 
 import path from 'path';
 
@@ -29,9 +30,13 @@ app.use(
 
 app.use(express.urlencoded({ extended: true, limit: '10kb' }));
 
-app.use(compression());
-
 if (process.env.NODE_ENV === 'production') {
+  app.use(compression());
+  app.use(
+    enforce.HTTPS({
+      trustProtoHeader: true,
+    }),
+  );
   app.use(express.static('/app/client/dist'));
   app.get('*', function (_request, response) {
     response.sendFile(path.join('/app/client/dist', 'index.html'));

@@ -1,25 +1,16 @@
-import { FunctionComponent } from 'react';
+import { FunctionComponent, lazy } from 'react';
 import { Route, Routes } from 'react-router-dom';
-import { WorkDetailPage } from '@pages/works/pages/work-detail/work-detail.page';
-import WorksPage from '@pages/works/works.page';
+
+const WorksPage = lazy(() => import('@pages/works/works.page'));
+const WorkDetailsPage = lazy(
+  () => import('@pages/works/pages/work-detail/work-detail.page')
+);
 
 export const WorksRoutes: FunctionComponent = () => {
   return (
     <Routes>
-      <Route
-        index
-        element={<WorksPage />}
-        handle={{
-          crumb: () => <div>Work</div>,
-        }}
-      />
-      <Route
-        path=":name"
-        element={<WorkDetailPage />}
-        handle={{
-          crumb: (data: { name: string }) => <div>{data.name}</div>,
-        }}
-      />
+      <Route index element={<WorksPage />} />
+      <Route path=":name" element={<WorkDetailsPage />} />
     </Routes>
   );
 };

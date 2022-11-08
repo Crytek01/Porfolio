@@ -14,7 +14,6 @@ import {
 import {
   Article,
   Description,
-  ImageContainer,
   KeyPoint,
   KeyPointsContainer,
   LogoImage,
@@ -23,7 +22,7 @@ import {
   PreviewTitle,
 } from './work-detail.styles';
 
-const WorkDetail = () => {
+export const WorkDetailPage = () => {
   const { name } = useParams();
   const worksService = useWorksService();
 
@@ -87,4 +86,4 @@ const WorkDetail = () => {
   );
 };
 
-export const WorkDetailPage = withEaseInAnimation(WorkDetail);
+export default withEaseInAnimation(WorkDetailPage);
