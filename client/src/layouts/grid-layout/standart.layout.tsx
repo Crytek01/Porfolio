@@ -19,11 +19,11 @@ export const StandartLayout: FunctionComponent<IStandartLayout> = ({
 
       <main>{children}</main>
 
-      <AnimatedFooter>
+      <footer>
         <Container>
           <FooterText>&copy; 2022 Erick Badilla</FooterText>
         </Container>
-      </AnimatedFooter>
+      </footer>
     </Fragment>
   );
 };

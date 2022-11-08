@@ -16,9 +16,6 @@ export const Header = styled.header`
   background-color: #fff;
 `;
 
-const Footer = styled.footer``;
-export const AnimatedFooter = withStandartAnimation(Footer);
-
 export const FooterText = styled(Typography).attrs({
   size: 'b5',
   color: 'lightGrey',
