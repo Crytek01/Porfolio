@@ -72,10 +72,10 @@ export const CVPage: FunctionComponent = () => {
           that makes management easy and intelligent for private companies.
           <br />
           <br />
-          I worked proactively fixing bugs at the start, then worked on
-          taking small user stories and owning the whole process responsibility,
-          and then started taking complex user stories and working closely with
-          the Quality Assurance team and Backend team.
+          And worked proactively fixing bugs at the start, then worked on taking
+          small user stories and owning the whole process responsibility, and
+          then started taking complex user stories and working closely with the
+          Quality Assurance team and Backend team.
         </Text>
       </section>
     </ArticleContainer>
