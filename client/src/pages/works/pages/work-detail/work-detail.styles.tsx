@@ -1,10 +1,10 @@
-import styled, { css } from 'styled-components';
-
-import { ArticleContainer } from '../../../../common/components/containers/article/article.component';
+import { ArticleContainer } from '@common/components/containers/article/article.component';
+import { Image } from '@common/components/image/image.component';
 import {
   styleSize,
   Typography,
-} from '../../../../common/components/typography/typography.component';
+} from '@common/components/typography/typography.component';
+import styled, { css } from 'styled-components';
 
 const tabletBreakpoint = '(max-width: 30em)';
 const mobileBreakpoint = '(max-width: 27em)';
@@ -24,15 +24,16 @@ export const ImageContainer = styled.picture`
 const imageDefaultStyles = css`
   border-radius: 11px;
   width: 100%;
-  height: 100%;
 `;
 
-export const LogoImage = styled.img`
+export const LogoImage = styled(Image)`
   ${imageDefaultStyles}
+  height: 33.1rem;
 `;
 
-export const PreviewImage = styled.img`
+export const PreviewImage = styled(Image)`
   ${imageDefaultStyles}
+  height: 45.1rem;
 `;
 
 export const Description = styled(Typography).attrs({
@@ -79,7 +80,7 @@ export const Point = styled(Typography).attrs({
 })`
   @media ${tabletBreakpoint} {
     font-size: ${styleSize.b5};
-  padding: ${({ theme: { spacing } }) => spacing[1]};
+    padding: ${({ theme: { spacing } }) => spacing[1]};
   }
 `;
 

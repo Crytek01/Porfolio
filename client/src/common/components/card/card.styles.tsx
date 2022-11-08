@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 
+import { Image } from '../image/image.component';
 import { Typography } from '../typography/typography.component';
 
 export const CardContainer = styled.div`
@@ -27,7 +28,7 @@ export const CardContainer = styled.div`
   }
 `;
 
-export const CardImage = styled.img`
+export const CardImage = styled(Image)`
   border-radius: 11px;
 
   margin-bottom: 1.2rem;

@@ -1,8 +1,7 @@
 import { FunctionComponent } from 'react';
-
-import { ArticleContainer } from '../../common/components/containers/article/article.component';
-import { Spacer } from '../../common/components/spacer/spacer.component';
-import { withStandartAnimation } from '../../common/hocs/standart-animation.hoc';
+import { ArticleContainer } from '@common/components/containers/article/article.component';
+import { Spacer } from '@common/components/spacer/spacer.component';
+import { withStandartAnimation } from '@common/hocs/standart-animation.hoc';
 
 import {
   CVTag,
@@ -23,8 +22,8 @@ export const CVPage: FunctionComponent = () => {
         <SubTitle>Multiplied Solutions (Jun 2022 - Present):</SubTitle>
         <Spacer size={4} />
         <Text>
-          I Worked four months on an internal project about coding interviews and
-          worked as a full-stack Node / React refactoring code, improved
+          I Worked four months on an internal project about coding interviews
+          and worked as a full-stack Node / React refactoring code, improved
           authentication backend and client-side, implemented real-time coding
           between the interviewers and the interviewee, and implemented code
           compilation of multiple languages for the interviewees.
@@ -72,10 +71,9 @@ export const CVPage: FunctionComponent = () => {
           Scrum agile team on a complex Angular application about private stocks
           that makes management easy and intelligent for private companies.
           <br />
-          <br />
-          I Worked proactively fixing bugs at the start, then worked on taking
-          small user stories and owning the whole process responsibility, and
-          then started taking complex user stories working closely with the
+          <br />I Worked proactively fixing bugs at the start, then worked on
+          taking small user stories and owning the whole process responsibility,
+          and then started taking complex user stories working closely with the
           Quality Assurance team and Backend team.
         </Text>
       </section>

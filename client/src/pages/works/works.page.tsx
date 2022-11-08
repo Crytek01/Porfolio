@@ -1,10 +1,10 @@
 import { FunctionComponent } from 'react';
+import { Card } from '@common/components/card/card.component';
+import { ArticleContainer } from '@common/components/containers/article/article.component';
+import { Spacer } from '@common/components/spacer/spacer.component';
+import { withStandartAnimation } from '@common/hocs/standart-animation.hoc';
 import slugify from 'slugify';
 
-import { Card } from '../../common/components/card/card.component';
-import { ArticleContainer } from '../../common/components/containers/article/article.component';
-import { Spacer } from '../../common/components/spacer/spacer.component';
-import { withStandartAnimation } from '../../common/hocs/standart-animation.hoc';
 import { useWorksService } from '../../contexts/works/works.service';
 
 import {

@@ -1,8 +1,7 @@
+import { ExternalLink } from '@common/components/external-link/external-link.comonent';
+import { Tag } from '@common/components/tag/tag.component';
+import { Typography } from '@common/components/typography/typography.component';
 import styled from 'styled-components';
-
-import { ExternalLink } from '../../common/components/external-link/external-link.comonent';
-import { Tag } from '../../common/components/tag/tag.component';
-import { Typography } from '../../common/components/typography/typography.component';
 
 const tableQuery = '(max-width: 31.5em)';
 const mobileQuery = '(max-width: 28em)';

@@ -5,15 +5,14 @@ import {
   useLocation,
   useRoutes,
 } from 'react-router-dom';
+import { Container } from '@common/components/containers/container/container.styled';
+import ErrorBoundary from '@common/components/error-boundary/error-boundary.component';
+import { LoadingPage } from '@pages/loading/loading.page';
 import { AnimatePresence } from 'framer-motion';
 
-import { Container } from '../../../common/components/containers/container/container.styled';
-import ErrorBoundary from '../../../common/components/error-boundary/error-boundary.component';
-import { LoadingPage } from '../../../pages/loading/loading.component';
-
-const HomePage = lazy(() => import('../../../pages/home/home.page'));
+const HomePage = lazy(() => import('@pages/home/home.page'));
 const WorksRoutes = lazy(() => import('../works/works.route'));
-const CVPage = lazy(() => import('../../../pages/cv/cv.page'));
+const CVPage = lazy(() => import('@pages/cv/cv.page'));
 
 const routes: RouteObject[] = [
   {

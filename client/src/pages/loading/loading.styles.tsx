@@ -1,6 +1,5 @@
+import { Spinner as SpinIcon } from '@common/components/spinner/spinner.component';
 import styled from 'styled-components';
-
-import { Spin } from '../../common/components/spinner/spinner.styles';
 
 interface ISpinner {
   top: number;
@@ -13,7 +12,7 @@ export const SpinnerContainer = styled.div`
   position: relative;
 `;
 
-export const Spinner = styled(Spin)<ISpinner>`
+export const Spinner = styled(SpinIcon)<ISpinner>`
   position: absolute;
   top: ${({ top }) => top}%;
   left: 50%;

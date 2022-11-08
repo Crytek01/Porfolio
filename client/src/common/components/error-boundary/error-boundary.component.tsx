@@ -1,6 +1,5 @@
 import React from 'react';
-
-import { GeneralErrorPage } from '../../../pages/error/general-error/general-error.page';
+import { GeneralErrorPage } from '@pages/error/general-error/general-error.page';
 
 interface IErrorBoundaryProp {
   children: React.ReactNode;

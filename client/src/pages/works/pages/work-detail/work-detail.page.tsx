@@ -1,11 +1,11 @@
 import { useState } from 'react';
 import { useParams } from 'react-router-dom';
+import { ExternalLink } from '@common/components/external-link/external-link.comonent';
+import { Spacer } from '@common/components/spacer/spacer.component';
+import { Tag } from '@common/components/tag/tag.component';
+import { withEaseInAnimation } from '@common/hocs/left-right-animation';
+import { separateText } from '@common/utils/text/text.util';
 
-import { ExternalLink } from '../../../../common/components/external-link/external-link.comonent';
-import { Spacer } from '../../../../common/components/spacer/spacer.component';
-import { Tag } from '../../../../common/components/tag/tag.component';
-import { withEaseInAnimation } from '../../../../common/hocs/left-right-animation';
-import { separateText } from '../../../../common/utils/text/text.util';
 import {
   IWork,
   useWorksService,
@@ -42,7 +42,7 @@ const WorkDetail = () => {
         />
 
         <LogoImage
-          src={work?.logoImage.basic.source}
+          src={work?.logoImage.basic.source ?? ''}
           alt="A Project Logo image"
         />
       </ImageContainer>

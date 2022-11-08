@@ -1,8 +1,7 @@
 import { Link } from 'react-router-dom';
+import { CardContainer } from '@common/components/card/card.styles';
+import { Typography } from '@common/components/typography/typography.component';
 import styled from 'styled-components';
-
-import { CardContainer } from '../../common/components/card/card.styles';
-import { Typography } from '../../common/components/typography/typography.component';
 
 export const SectionContainer = styled.section`
   &:not(:last-child) {

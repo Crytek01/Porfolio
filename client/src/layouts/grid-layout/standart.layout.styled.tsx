@@ -1,6 +1,6 @@
+import { Typography } from '@common/components/typography/typography.component';
+import { withStandartAnimation } from '@common/hocs/standart-animation.hoc';
 import styled from 'styled-components';
-
-import { Typography } from '../../common/components/typography/typography.component';
 
 export const Header = styled.header`
   width: 100%;
@@ -15,6 +15,9 @@ export const Header = styled.header`
   z-index: 9999;
   background-color: #fff;
 `;
+
+const Footer = styled.footer``;
+export const AnimatedFooter = withStandartAnimation(Footer);
 
 export const FooterText = styled(Typography).attrs({
   size: 'b5',

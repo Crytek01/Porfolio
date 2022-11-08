@@ -1,9 +1,8 @@
-import styled from 'styled-components';
-
 import {
   styleSize,
   Typography,
-} from '../../common/components/typography/typography.component';
+} from '@common/components/typography/typography.component';
+import styled from 'styled-components';
 
 export const Title = styled(Typography).attrs({
   size: 'h1',
