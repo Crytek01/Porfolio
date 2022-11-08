@@ -2,7 +2,7 @@ import React, { Fragment, FunctionComponent } from 'react';
 import { Container } from '@common/components/containers/container/container.styled';
 import { NavBar } from '@common/components/nav-bar/nav-bar.component';
 
-import { AnimatedFooter, FooterText, Header } from './standart.layout.styled';
+import { FooterText, Header } from './standart.layout.styled';
 
 interface IStandartLayout {
   children: React.ReactNode;

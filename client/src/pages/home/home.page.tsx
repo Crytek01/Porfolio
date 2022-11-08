@@ -34,7 +34,7 @@ const HomePage = () => {
         <Spacer size={3} />
 
         <SectionText>
-          Hi I am Erick Badilla. I am a pragmatic and self-taught React /
+          Hi, I am Erick Badilla. I am a pragmatic and self-taught React /
           Angular developer looking to work with a great team to solve
           challenging problems. I primarily focus on writing clean, elegant, and
           efficient code with wide-open proficiency in JavaScript, Typescript,
@@ -50,13 +50,15 @@ const HomePage = () => {
         <BiographyList>
           <BiographyItem>
             <BiographyBoldText>2022</BiographyBoldText>
-            <SectionText>Worked in Cecropia as Software Developer.</SectionText>
+            <SectionText>
+              Worked at Cecropia as a Software Developer consultant.
+            </SectionText>
           </BiographyItem>
 
           <BiographyItem>
             <BiographyBoldText>2022</BiographyBoldText>
             <SectionText>
-              Worked in Accenture as Web Developer Analyst.
+              Worked at Accenture as a Web Developer Analyst consultant.
             </SectionText>
           </BiographyItem>
 
@@ -70,7 +72,7 @@ const HomePage = () => {
           <BiographyItem>
             <BiographyBoldText>2021</BiographyBoldText>
             <SectionText>
-              Worked in Gorilla Logic as an Angular Developer intern for nearly
+              Worked at Gorilla Logic as an Angular Developer intern for nearly
               six months.
             </SectionText>
           </BiographyItem>
@@ -94,20 +96,20 @@ const HomePage = () => {
           <BiographyItem>
             <SectionText>
               I created an SWI Prolog transpiler from Java to Kotlin alike
-              syntax in my major.
+              Syntax in my major.
             </SectionText>
           </BiographyItem>
 
           <BiographyItem>
             <SectionText>
               In one of my jobs, I worked and learned Angular on a complex
-              project about private equity management software.
+              Project about private equity management software.
             </SectionText>
           </BiographyItem>
 
           <BiographyItem>
             <SectionText>
-              I Created a e-commerce website with React and Firebase.
+              I Created an e-commerce website with React and Firebase.
             </SectionText>
           </BiographyItem>
         </BiographyList>
