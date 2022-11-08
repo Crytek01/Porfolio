@@ -74,15 +74,14 @@ const WorkDetail = () => {
       <Spacer size={3} />
 
       {work?.previewImage.map((image) => (
-        <ImageContainer key={image.basic.source}>
-          <source srcSet={image.optimized.source} type={image.optimized.type} />
-          <source srcSet={image.basic.source} type={image.basic.type} />
-
-          <PreviewImage
-            src={image.basic.source}
-            alt="A project preview image"
-          />
-        </ImageContainer>
+        <PreviewImage
+          key={image.basic.source}
+          alt="A project preview image"
+          src={image.basic.source}
+          type={image.basic.type}
+          optimizedSrc={image.optimized.source}
+          optimizedType={image.optimized.type}
+        />
       ))}
     </Article>
   );
