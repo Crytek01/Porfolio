@@ -1,5 +1,7 @@
 import { FunctionComponent } from 'react';
 
+import { ILinkOptions } from '../Link/link.component';
+
 import {
   MenuItem,
   PopLink,
@@ -11,6 +13,7 @@ export interface IMenuOptions {
   name: string;
   route: string;
   isExternal?: boolean;
+  target?: ILinkOptions['target'];
 }
 
 interface IPopMenu {
@@ -32,9 +35,14 @@ export const PopMenu: FunctionComponent<IPopMenu> = ({
     onClick={(e) => e.stopPropagation()}
     isVisible={isMenuOpen}
   >
-    {options.map(({ route, name, isExternal }) => (
+    {options.map(({ route, name, isExternal, target = '_self' }) => (
       <MenuItem key={route}>
-        <PopLink to={route} onClick={onItemClick} isExternal={isExternal}>
+        <PopLink
+          to={route}
+          onClick={onItemClick}
+          isExternal={isExternal}
+          options={{ target }}
+        >
           <PopLinkName>{name}</PopLinkName>
         </PopLink>
       </MenuItem>

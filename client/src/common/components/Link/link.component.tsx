@@ -2,7 +2,7 @@ import { FunctionComponent } from 'react';
 
 import { ExternalLink, RouterLink } from './link.styles';
 
-interface ILinkOptions {
+export interface ILinkOptions {
   target?: '_self' | '_blank';
   activeColor?: string;
   color?: string;
