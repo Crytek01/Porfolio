@@ -84,6 +84,17 @@ export const NavBar: FunctionComponent = () => {
               name: 'CV',
               route: '/cv',
             },
+            {
+              isExternal: true,
+              name: 'Github',
+              route:
+                'https://github.com/Crytek01?tab=repositories&q=&type=public&language=&sort=',
+            },
+            {
+              isExternal: true,
+              name: 'Linkedin',
+              route: 'https://www.linkedin.com/in/erick-badilla-70b787210/',
+            },
           ]}
         />
       )}

@@ -57,10 +57,7 @@ export const CVPage: FunctionComponent = () => {
 
         <RecomendationContainer>
           <CVTag>Recommendation Letter</CVTag>
-          <DownloadLink
-            href="/pdf/Recommendation Letter - Erick.pdf"
-            download="Recommendation Letter - Erick"
-          >
+          <DownloadLink to="/pdf/Recommendation Letter - Erick.pdf" isExternal>
             Download
           </DownloadLink>
         </RecomendationContainer>

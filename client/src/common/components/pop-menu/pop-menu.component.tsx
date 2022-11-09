@@ -10,6 +10,7 @@ import {
 export interface IMenuOptions {
   name: string;
   route: string;
+  isExternal?: boolean;
 }
 
 interface IPopMenu {
@@ -31,9 +32,9 @@ export const PopMenu: FunctionComponent<IPopMenu> = ({
     onClick={(e) => e.stopPropagation()}
     isVisible={isMenuOpen}
   >
-    {options.map(({ route, name }) => (
+    {options.map(({ route, name, isExternal }) => (
       <MenuItem key={route}>
-        <PopLink to={route} onClick={onItemClick}>
+        <PopLink to={route} onClick={onItemClick} isExternal={isExternal}>
           <PopLinkName>{name}</PopLinkName>
         </PopLink>
       </MenuItem>

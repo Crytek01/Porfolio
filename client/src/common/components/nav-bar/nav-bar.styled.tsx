@@ -13,8 +13,6 @@ export const NavContainer = styled.div`
 `;
 
 const LinkStyle = css`
-  display: inline-block;
-
   &:link,
   &:visited {
     text-decoration: none;

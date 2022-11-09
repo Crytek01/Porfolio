@@ -1,4 +1,4 @@
-import { ExternalLink } from '@common/components/external-link/external-link.comonent';
+import { Link } from '@common/components/Link/link.component';
 import { Tag } from '@common/components/tag/tag.component';
 import { Typography } from '@common/components/typography/typography.component';
 import styled from 'styled-components';
@@ -71,6 +71,6 @@ export const CVTag = styled(Tag)`
   font-size: ${({ theme: { fontSize } }) => fontSize[0]};
 `;
 
-export const DownloadLink = styled(ExternalLink)`
+export const DownloadLink = styled(Link)`
   font-size: ${({ theme: { fontSize } }) => fontSize[0]};
 `;

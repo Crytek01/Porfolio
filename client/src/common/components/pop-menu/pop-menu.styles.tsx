@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components';
 
-import { RouterLink } from '../nav-bar/nav-bar.styled';
+import { Link } from '../Link/link.component';
 import { styleSize, Typography } from '../typography/typography.component';
 
 const hideElementCSS = css`
@@ -59,14 +59,20 @@ export const MenuItem = styled.li`
   }
 `;
 
-export const PopLink = styled(RouterLink)`
-  text-align: left;
+export const PopLink = styled(Link)`
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: ${({ theme: { spacing } }) => spacing[1]};
+
+  padding: 1rem;
 `;
 
 export const PopLinkName = styled(Typography).attrs({
   size: 'b3',
   color: 'semiBoldGrey',
   weight: 'medium',
+  align: 'left',
 })`
   @media (max-width: 19em) {
     font-size: ${styleSize.b4};

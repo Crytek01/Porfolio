@@ -78,7 +78,7 @@ export const works: IWork[] = [
   {
     slug: 'meals-app',
     title: 'Meals App',
-    information: 'An Uber eats alike app approach.',
+    information: 'A meals app for food orders like Uber eats.',
     details:
       "It's a Meals Mobile app based on React Native and Firebase.<br/><br/>The app uses Firebase for auth, backend functions, and Google API for Geo Locations, Restaurant Photos, and Google Maps.",
     logoImage: {
