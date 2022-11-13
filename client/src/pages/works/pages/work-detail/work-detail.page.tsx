@@ -12,7 +12,6 @@ import {
 } from '../../../../contexts/works/works.service';
 
 import {
-  Article,
   Description,
   KeyPoint,
   KeyPointsContainer,
@@ -20,6 +19,7 @@ import {
   Point,
   PreviewImage,
   PreviewTitle,
+  StyledArticle,
 } from './work-detail.styles';
 
 export const WorkDetailPage = () => {
@@ -29,7 +29,7 @@ export const WorkDetailPage = () => {
   const [work] = useState<IWork | undefined>(worksService.findWork(name));
 
   return (
-    <Article>
+    <StyledArticle>
       <LogoImage
         alt="A Project Logo image"
         src={work?.logoImage.basic.source}
@@ -86,7 +86,7 @@ export const WorkDetailPage = () => {
           optimizedType={image.optimized.type}
         />
       ))}
-    </Article>
+    </StyledArticle>
   );
 };
 

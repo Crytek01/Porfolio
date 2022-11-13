@@ -3,13 +3,13 @@ import {
   styleSize,
   Typography,
 } from '@common/components/typography/typography.component';
-import { Article as Art } from '@layouts/article/article.component';
+import { Article as ArticleComponent } from '@layouts/article/article.component';
 import styled, { css } from 'styled-components';
 
 const tabletBreakpoint = '(max-width: 30em)';
 const mobileBreakpoint = '(max-width: 27em)';
 
-export const Article = styled(Art)`
+export const StyledArticle = styled(ArticleComponent)`
   margin: 0 auto;
   max-width: 50rem;
 `;
