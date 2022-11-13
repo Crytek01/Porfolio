@@ -3,13 +3,7 @@
     "composite": true,
     "module": "ESNext",
     "moduleResolution": "Node",
-    "allowSyntheticDefaultImports": true,
-    "paths": {
-      "@common/*": ["./common/*"],
-      "@pages/*": ["./pages/*"],
-      "@layouts/*": ["./layouts/*"],
-      "@infrastructure/*": ["./infrastructure/*"]
-    }
+    "allowSyntheticDefaultImports": true
   },
   "include": ["vite.config.ts"]
 }
