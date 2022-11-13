@@ -10,7 +10,9 @@
   "scripts": {
     "install": "cd client && npm install --dev && cd ../server && npm install --dev",
     "build": "cd client && npm run build && cd ../server && npm run build:release",
-    "start": "cd server/build/src && node server.js"
+    "start": "cd server/build/src && node server.js",
+    "heroku-prebuild": "export NPM_CONFIG_PRODUCTION=false; export NODE_ENV=; NPM_CONFIG_PRODUCTION=false NODE_ENV=development npm install --only=dev --dev",
+    "heroku-postbuild": "export NPM_CONFIG_PRODUCTION=true; export NODE_ENV=production;"
   },
   "repository": {
     "type": "git",
