@@ -5,7 +5,10 @@
     "moduleResolution": "Node",
     "allowSyntheticDefaultImports": true,
     "paths": {
-      "@common/*": ["./common/*"]
+      "@common/*": ["./common/*"],
+      "@pages/*": ["./pages/*"],
+      "@layouts/*": ["./layouts/*"],
+      "@infrastructure/*": ["./infrastructure/*"]
     }
   },
   "include": ["vite.config.ts"]
