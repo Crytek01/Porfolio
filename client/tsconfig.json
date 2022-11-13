@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "baseUrl": "src",
+    "baseUrl": "./src",
     "target": "ESNext",
     "useDefineForClassFields": true,
     "lib": ["DOM", "DOM.Iterable", "ESNext"],
@@ -17,13 +17,13 @@
     "noEmit": true,
     "jsx": "react-jsx",
     "paths": {
-      "@common/*": ["common/*"],
-      "@pages/*": ["pages/*"],
-      "@layouts/*": ["layouts/*"],
-      "@infrastructure/*": ["infrastructure/*"]
+      "@common/*": ["./common/*"],
+      "@pages/*": ["./pages/*"],
+      "@layouts/*": ["./layouts/*"],
+      "@infrastructure/*": ["./infrastructure/*"]
     }
   },
-  "include": ["src", "vitest.config.ts", "@testing-library/jest-dom"],
+  "include": ["/**/*", "vitest.config.ts", "@testing-library/jest-dom"],
   "exclude": ["node_modules"],
 
   "references": [{ "path": "./tsconfig.node.json" }]
