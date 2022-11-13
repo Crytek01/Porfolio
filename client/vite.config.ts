@@ -1,5 +1,7 @@
+/// <reference types="vitest" />
+
 import react from '@vitejs/plugin-react';
-import path from 'path';
+import path, { resolve } from 'path';
 import { defineConfig } from 'vite';
 import viteCompression from 'vite-plugin-compression';
 import { nodePolyfills } from 'vite-plugin-node-polyfills';
@@ -19,6 +21,15 @@ export default defineConfig({
     alias: {
       '@common': path.resolve(__dirname, './src/common'),
       '@pages': path.resolve(__dirname, './src/pages'),
+      '@layouts': path.resolve(__dirname, './src/layouts'),
+      '@infrastructure': path.resolve(__dirname, './src/infrastructure'),
     },
+  },
+  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+  //@ts-ignore
+  test: {
+    globals: true,
+    environment: 'jsdom',
+    setupFiles: [resolve(__dirname, './test-setup.ts')],
   },
 });

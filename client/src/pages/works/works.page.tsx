@@ -1,8 +1,8 @@
 import { FunctionComponent } from 'react';
 import { Card } from '@common/components/card/card.component';
-import { ArticleContainer } from '@common/components/containers/article/article.component';
 import { Spacer } from '@common/components/spacer/spacer.component';
 import { withStandartAnimation } from '@common/hocs/standart-animation.hoc';
+import { Article } from '@layouts/article/article.component';
 import slugify from 'slugify';
 
 import { useWorksService } from '../../contexts/works/works.service';
@@ -19,7 +19,7 @@ const WorksPage: FunctionComponent = () => {
   const worksService = useWorksService();
 
   return (
-    <ArticleContainer>
+    <Article>
       <header>
         <Title>My Works</Title>
       </header>
@@ -44,7 +44,7 @@ const WorksPage: FunctionComponent = () => {
           ))}
         </GridContainer>
       </SectionContainer>
-    </ArticleContainer>
+    </Article>
   );
 };
 

@@ -1,0 +1,55 @@
+// Vitest Snapshot v1
+
+exports[`Pop menu component Test > renders correctly 1`] = `
+<styled.ul
+  isVisible={false}
+  onClick={[Function]}
+>
+  <styled.li>
+    <Styled(Link)
+      onClick={[Function]}
+      options={
+        {
+          "target": "_self",
+        }
+      }
+      to="/test1"
+    >
+      <Styled(Typography)>
+        Test1
+      </Styled(Typography)>
+    </Styled(Link)>
+  </styled.li>
+  <styled.li>
+    <Styled(Link)
+      onClick={[Function]}
+      options={
+        {
+          "target": "_self",
+        }
+      }
+      to="/test2"
+    >
+      <Styled(Typography)>
+        Test2
+      </Styled(Typography)>
+    </Styled(Link)>
+  </styled.li>
+  <styled.li>
+    <Styled(Link)
+      isExternal={true}
+      onClick={[Function]}
+      options={
+        {
+          "target": "_blank",
+        }
+      }
+      to="/test3"
+    >
+      <Styled(Typography)>
+        Test3
+      </Styled(Typography)>
+    </Styled(Link)>
+  </styled.li>
+</styled.ul>
+`;

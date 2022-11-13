@@ -1,4 +1,4 @@
-import { Link } from '@common/components/Link/link.component';
+import { Link } from '@common/components/link/link.component';
 import { Tag } from '@common/components/tag/tag.component';
 import { Typography } from '@common/components/typography/typography.component';
 import styled from 'styled-components';

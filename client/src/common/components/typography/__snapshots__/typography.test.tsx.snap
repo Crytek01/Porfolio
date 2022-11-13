@@ -1,0 +1,14 @@
+// Vitest Snapshot v1
+
+exports[`Typography component Test > renders correctly 1`] = `
+<styled.p
+  as="p"
+  color="#333"
+  fontSize="2rem"
+  fontWeight={700}
+  lineHeight={1}
+  textAlign="center"
+>
+  Typo
+</styled.p>
+`;

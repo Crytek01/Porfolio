@@ -1,7 +1,7 @@
 import { FunctionComponent } from 'react';
-import { ArticleContainer } from '@common/components/containers/article/article.component';
 import { Spacer } from '@common/components/spacer/spacer.component';
 import { withStandartAnimation } from '@common/hocs/standart-animation.hoc';
+import { Article } from '@layouts/article/article.component';
 
 import {
   CVTag,
@@ -14,7 +14,7 @@ import {
 
 export const CVPage: FunctionComponent = () => {
   return (
-    <ArticleContainer>
+    <Article>
       <section>
         <Title>Work Experience</Title>
         <Spacer size={6} />
@@ -75,7 +75,7 @@ export const CVPage: FunctionComponent = () => {
           Quality Assurance team and Backend team.
         </Text>
       </section>
-    </ArticleContainer>
+    </Article>
   );
 };
 

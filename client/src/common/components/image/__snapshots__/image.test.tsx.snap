@@ -1,0 +1,18 @@
+// Vitest Snapshot v1
+
+exports[`Image component Test > renders correctly 1`] = `
+<styled.div>
+  <picture>
+    <source />
+    <source />
+    <styled.img
+      isVisible={false}
+      onLoad={[Function]}
+    />
+    <Styled(Spinner)
+      isRunning={true}
+      size={50}
+    />
+  </picture>
+</styled.div>
+`;

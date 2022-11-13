@@ -1,0 +1,8 @@
+// Vitest Snapshot v1
+
+exports[`Spacer component Test > renders correctly 1`] = `
+<styled.div
+  position="margin-bottom"
+  size={10}
+/>
+`;

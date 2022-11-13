@@ -1,15 +1,15 @@
-import { ArticleContainer } from '@common/components/containers/article/article.component';
 import { Image } from '@common/components/image/image.component';
 import {
   styleSize,
   Typography,
 } from '@common/components/typography/typography.component';
+import { Article as Art } from '@layouts/article/article.component';
 import styled, { css } from 'styled-components';
 
 const tabletBreakpoint = '(max-width: 30em)';
 const mobileBreakpoint = '(max-width: 27em)';
 
-export const Article = styled(ArticleContainer)`
+export const Article = styled(Art)`
   margin: 0 auto;
   max-width: 50rem;
 `;

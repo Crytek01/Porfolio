@@ -5,8 +5,8 @@ import {
   useLocation,
   useRoutes,
 } from 'react-router-dom';
-import { Container } from '@common/components/containers/container/container.styled';
 import ErrorBoundary from '@common/components/error-boundary/error-boundary.component';
+import { Container } from '@layouts/container/container.styled';
 import { LoadingPage } from '@pages/loading/loading.page';
 import { AnimatePresence } from 'framer-motion';
 

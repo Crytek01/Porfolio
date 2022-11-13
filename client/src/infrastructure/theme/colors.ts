@@ -5,4 +5,7 @@ export const colors = {
     standartGrey: '#555',
     lightGrey: '#666',
   },
+  backgroudColors: {
+    lightGreen: '#c6f6d5',
+  },
 };

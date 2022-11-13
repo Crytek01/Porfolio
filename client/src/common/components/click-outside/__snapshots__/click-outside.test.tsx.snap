@@ -1,0 +1,7 @@
+// Vitest Snapshot v1
+
+exports[`Click outside component Test > renders correctly 1`] = `
+<div>
+  <div />
+</div>
+`;

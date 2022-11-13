@@ -1,0 +1,47 @@
+// Vitest Snapshot v1
+
+exports[`Snack button component Test > renders correctly 1`] = `
+<ClickOutside
+  onClickOutside={[Function]}
+>
+  <styled.button
+    aria-label="Guide"
+    isMenuOpen={false}
+    onClick={[Function]}
+  >
+    <styled.svg
+      viewBox="0 0 10 8"
+      width="35"
+    >
+      <path
+        d="M1 1h8M1 4h 8M1 7h8"
+        stroke="#000"
+        strokeLinecap="round"
+        strokeWidth="0.8"
+      />
+    </styled.svg>
+    <PopMenu
+      isMenuOpen={false}
+      onItemClick={[Function]}
+      options={
+        [
+          {
+            "name": "Test1",
+            "route": "/test1",
+          },
+          {
+            "name": "Test2",
+            "route": "/test2",
+          },
+          {
+            "isExternal": true,
+            "name": "Test3",
+            "route": "/test3",
+            "target": "_blank",
+          },
+        ]
+      }
+    />
+  </styled.button>
+</ClickOutside>
+`;

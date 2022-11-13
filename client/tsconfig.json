@@ -18,10 +18,12 @@
     "jsx": "react-jsx",
     "paths": {
       "@common/*": ["./common/*"],
-      "@pages/*": ["./pages/*"]
+      "@pages/*": ["./pages/*"],
+      "@layouts/*": ["./layouts/*"],
+      "@infrastructure/*": ["./infrastructure/*"]
     }
   },
-  "include": ["src"],
+  "include": ["src", "vitest.config.ts", "@testing-library/jest-dom"],
 
   "references": [{ "path": "./tsconfig.node.json" }]
 }

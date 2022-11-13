@@ -1,0 +1,57 @@
+// Vitest Snapshot v1
+
+exports[`Nav bar component Test > renders correctly 1`] = `
+<styled.div>
+  <Styled(Link)
+    to="/"
+  >
+    <styled.p>
+      Erick Badilla Portfolio
+    </styled.p>
+  </Styled(Link)>
+  <styled.ul>
+    <styled.li>
+      <Styled(Link)
+        to="/works"
+      >
+        <Styled(Component) />
+        <span>
+          Works
+        </span>
+      </Styled(Link)>
+    </styled.li>
+    <styled.li>
+      <Styled(Link)
+        to="/cv"
+      >
+        <Styled(Component) />
+        <span>
+          CV
+        </span>
+      </Styled(Link)>
+    </styled.li>
+    <styled.li>
+      <styled.a
+        href="https://github.com/Crytek01?tab=repositories&q=&type=public&language=&sort="
+        target="_blank"
+      >
+        <Styled(Component) />
+        <span>
+          Github
+        </span>
+      </styled.a>
+    </styled.li>
+    <styled.li>
+      <styled.a
+        href="https://www.linkedin.com/in/erick-badilla-70b787210/"
+        target="_blank"
+      >
+        <Styled(Component) />
+        <span>
+          Linkedin
+        </span>
+      </styled.a>
+    </styled.li>
+  </styled.ul>
+</styled.div>
+`;

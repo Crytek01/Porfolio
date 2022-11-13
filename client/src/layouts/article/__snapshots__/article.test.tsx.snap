@@ -1,0 +1,7 @@
+// Vitest Snapshot v1
+
+exports[`Article component Test > renders correctly 1`] = `
+<styled.article>
+  <div />
+</styled.article>
+`;

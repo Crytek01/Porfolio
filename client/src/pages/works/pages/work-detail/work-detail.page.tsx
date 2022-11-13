@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useParams } from 'react-router-dom';
-import { Link } from '@common/components/Link/link.component';
+import { Link } from '@common/components/link/link.component';
 import { Spacer } from '@common/components/spacer/spacer.component';
 import { Tag } from '@common/components/tag/tag.component';
 import { withEaseInAnimation } from '@common/hocs/left-right-animation';

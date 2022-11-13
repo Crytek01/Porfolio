@@ -1,0 +1,8 @@
+// Vitest Snapshot v1
+
+exports[`Spinner component Test > renders correctly 1`] = `
+<styled.div
+  isRunning={true}
+  size={0}
+/>
+`;

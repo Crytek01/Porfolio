@@ -1,7 +1,7 @@
-import { ArticleContainer } from '@common/components/containers/article/article.component';
 import { Spacer } from '@common/components/spacer/spacer.component';
 import { withStandartAnimation } from '@common/hocs/standart-animation.hoc';
 import { useMediaQuery } from '@common/hooks/media-query/use-media-query.hook';
+import { Article } from '@layouts/article/article.component';
 
 import {
   BiographyBoldText,
@@ -17,7 +17,7 @@ const HomePage = () => {
   const isMobile = useMediaQuery('(max-width: 29em)');
 
   return (
-    <ArticleContainer>
+    <Article>
       <header>
         <Title>Erick Badilla</Title>
         <Spacer size={3} />
@@ -114,7 +114,7 @@ const HomePage = () => {
           </BiographyItem>
         </BiographyList>
       </section>
-    </ArticleContainer>
+    </Article>
   );
 };
 

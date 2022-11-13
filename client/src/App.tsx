@@ -1,9 +1,9 @@
 import { BrowserRouter } from 'react-router-dom';
+import { Navigation } from '@infrastructure/navigation';
+import { StandardLayout } from '@layouts/standard-layout/standard.layout';
 import { ThemeProvider } from 'styled-components';
 
-import { Navigation } from './infrastructure/navigation';
 import { theme } from './infrastructure/theme';
-import { StandartLayout } from './layouts/grid-layout/standart.layout';
 
 import './App.css';
 
@@ -12,9 +12,9 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <ThemeProvider theme={theme}>
-          <StandartLayout>
+          <StandardLayout>
             <Navigation />
-          </StandartLayout>
+          </StandardLayout>
         </ThemeProvider>
       </BrowserRouter>
     </div>

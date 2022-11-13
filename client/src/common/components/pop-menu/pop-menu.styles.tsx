@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components';
 
-import { Link } from '../Link/link.component';
+import { Link } from '../link/link.component';
 import { styleSize, Typography } from '../typography/typography.component';
 
 const hideElementCSS = css`

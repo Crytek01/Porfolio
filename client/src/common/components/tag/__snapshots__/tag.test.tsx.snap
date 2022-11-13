@@ -1,0 +1,10 @@
+// Vitest Snapshot v1
+
+exports[`Tag component Test > renders correctly 1`] = `
+<styled.span
+  backgroundColor="#555"
+  textColor="#484848"
+>
+  Tag
+</styled.span>
+`;

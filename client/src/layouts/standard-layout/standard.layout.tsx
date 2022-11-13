@@ -1,14 +1,15 @@
 import React, { Fragment, FunctionComponent } from 'react';
-import { Container } from '@common/components/containers/container/container.styled';
 import { NavBar } from '@common/components/nav-bar/nav-bar.component';
 
-import { FooterText, Header } from './standart.layout.styled';
+import { Container } from '../container/container.styled';
 
-interface IStandartLayout {
+import { FooterText, Header } from './standard.layout.styled';
+
+interface IStandardLayout {
   children: React.ReactNode;
 }
 
-export const StandartLayout: FunctionComponent<IStandartLayout> = ({
+export const StandardLayout: FunctionComponent<IStandardLayout> = ({
   children,
 }) => {
   return (
