@@ -17,10 +17,10 @@
     "noEmit": true,
     "jsx": "react-jsx",
     "paths": {
-      "@common/*": ["src/common/*"],
-      "@pages/*": ["src/pages/*"],
-      "@layouts/*": ["src/layouts/*"],
-      "@infrastructure/*": ["src/infrastructure/*"]
+      "@common/*": ["./src/common/*"],
+      "@pages/*": ["./src/pages/*"],
+      "@layouts/*": ["./src/layouts/*"],
+      "@infrastructure/*": ["./src/infrastructure/*"]
     }
   },
   "include": ["vitest.config.ts", "@testing-library/jest-dom", "src/**/*"],
