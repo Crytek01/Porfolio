@@ -1,7 +1,8 @@
-import { Link } from '@common/components/link/link.component';
 import { Tag } from '@common/components/tag/tag.component';
 import { Typography } from '@common/components/typography/typography.component';
 import styled from 'styled-components';
+
+import { Link } from '../../common/components/link/link.component';
 
 const tableQuery = '(max-width: 31.5em)';
 const mobileQuery = '(max-width: 28em)';

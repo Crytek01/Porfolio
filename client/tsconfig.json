@@ -30,9 +30,5 @@
     "@testing-library/jest-dom"
   ],
   "exclude": ["node_modules"],
-  "ts-node": {
-    "require": ["tsconfig-paths/register"]
-  },
-
   "references": [{ "path": "./tsconfig.node.json" }]
 }
