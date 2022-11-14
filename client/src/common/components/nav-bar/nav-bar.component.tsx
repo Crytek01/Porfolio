@@ -1,7 +1,8 @@
 import { FunctionComponent, useState } from 'react';
-import { IMenuOptions } from '@common/components/pop-menu/pop-menu.component';
-import { SnackButton } from '@common/components/snack-button/snack-button.component';
 import { useMediaQuery } from '@common/hooks/media-query/use-media-query.hook';
+
+import { IMenuOptions } from '../pop-menu/pop-menu.component';
+import { SnackButton } from '../snack-button/snack-button.component';
 
 import {
   CvIcon,

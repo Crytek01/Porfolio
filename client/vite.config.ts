@@ -19,10 +19,10 @@ export default defineConfig({
   ].filter(Boolean),
   resolve: {
     alias: {
-      '@common': path.resolve(__dirname, 'src/common'),
-      '@pages': path.resolve(__dirname, 'src/pages'),
-      '@layouts': path.resolve(__dirname, 'src/layouts'),
-      '@infrastructure': path.resolve(__dirname, 'src/infrastructure'),
+      '@common': path.resolve(__dirname, './src/common'),
+      '@pages': path.resolve(__dirname, './src/pages'),
+      '@layouts': path.resolve(__dirname, './src/layouts'),
+      '@infrastructure': path.resolve(__dirname, './src/infrastructure'),
     },
   },
   // eslint-disable-next-line @typescript-eslint/ban-ts-comment

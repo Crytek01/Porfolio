@@ -14,12 +14,12 @@ export const StyledArticle = styled(ArticleComponent)`
   max-width: 50rem;
 `;
 
-export const ImageContainer = styled.picture`
-  display: flex;
-  justify-content: center;
-  width: clamp(15rem, 100%, 50rem);
-  height: auto;
-`;
+// export const ImageContainer = styled.picture`
+//   display: flex;
+//   justify-content: center;
+//   width: clamp(15rem, 100%, 50rem);
+//   height: auto;
+// `;
 
 const imageDefaultStyles = css`
   border-radius: 11px;
@@ -28,12 +28,13 @@ const imageDefaultStyles = css`
 
 export const LogoImage = styled(Image)`
   ${imageDefaultStyles}
-  height: 33.1rem;
+  height: auto;
 `;
 
 export const PreviewImage = styled(Image)`
   ${imageDefaultStyles}
   height: 45.1rem;
+  height: auto;
 `;
 
 export const Description = styled(Typography).attrs({

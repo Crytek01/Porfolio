@@ -17,6 +17,7 @@ interface IImage {
 export const Img = styled.img<IImage>`
   width: 100%;
   height: 100%;
+  content-visibility: auto;
   display: ${({ isVisible }) => (isVisible ? 'block' : 'none')};
 `;
 

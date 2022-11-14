@@ -1,3 +1,4 @@
+import { withProps } from '@common/hocs/with-props.hoc';
 import styled from 'styled-components';
 
 import { Image } from '../image/image.component';
@@ -45,12 +46,12 @@ export const TextContainer = styled.div`
   padding: 1rem 2rem;
 `;
 
-export const CardTitle = styled(Typography).attrs({
-  forwardedAs: 'h3',
+export const CardTitle = withProps(Typography, {
+  as: 'h3',
   size: 'h3',
   weight: 'medium',
   align: 'center',
-})``;
+});
 
 export const CardDescription = styled(Typography).attrs({
   size: 'b4',
