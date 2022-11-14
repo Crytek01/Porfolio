@@ -23,7 +23,7 @@
       "@infrastructure/*": ["./infrastructure/*"]
     }
   },
-  "include": ["src"],
-
+  "include": ["src", "@testing-library/jest-dom"],
+  "exclude": ["node_modules"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

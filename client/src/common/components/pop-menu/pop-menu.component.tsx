@@ -1,6 +1,5 @@
 import { FunctionComponent } from 'react';
-
-import { ILinkOptions } from '../../components/link/link.component';
+import { ILinkOptions } from '@common/components/link/link.component';
 
 import {
   MenuItem,
