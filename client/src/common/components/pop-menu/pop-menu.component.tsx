@@ -1,5 +1,5 @@
 import { FunctionComponent } from 'react';
-import { ILinkOptions } from '@common/components/link/link.component';
+import { ICustomLinkOptions } from '@common/components/custom-link/custom-link.component';
 
 import {
   MenuItem,
@@ -12,7 +12,7 @@ export interface IMenuOptions {
   name: string;
   route: string;
   isExternal?: boolean;
-  target?: ILinkOptions['target'];
+  target?: ICustomLinkOptions['target'];
 }
 
 interface IPopMenu {

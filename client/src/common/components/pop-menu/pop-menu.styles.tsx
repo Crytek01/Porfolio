@@ -1,4 +1,4 @@
-import { Link } from '@common/components/link/link.component';
+import { CustomLink } from '@common/components/custom-link/custom-link.component';
 import styled, { css } from 'styled-components';
 
 import { styleSize, Typography } from '../typography/typography.component';
@@ -59,7 +59,7 @@ export const MenuItem = styled.li`
   }
 `;
 
-export const PopLink = styled(Link)`
+export const PopLink = styled(CustomLink)`
   display: flex;
   align-items: center;
   justify-content: start;

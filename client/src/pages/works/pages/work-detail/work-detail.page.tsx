@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useParams } from 'react-router-dom';
-import { Link } from '@common/components/link/link.component';
+import { CustomLink } from '@common/components/custom-link/custom-link.component';
 import { Spacer } from '@common/components/spacer/spacer.component';
 import { Tag } from '@common/components/tag/tag.component';
 import { withEaseInAnimation } from '@common/hocs/left-right-animation.hoc';
@@ -47,16 +47,24 @@ export const WorkDetailPage = () => {
         <KeyPoint>
           <Tag>Link</Tag>
           <Point>
-            <Link isExternal isHoverBoxEnabled={false} to={work?.githubUrl}>
+            <CustomLink
+              isExternal
+              isHoverBoxEnabled={false}
+              to={work?.githubUrl}
+            >
               Github
-            </Link>
+            </CustomLink>
           </Point>
 
           {work?.websiteUrl ? (
             <Point>
-              <Link isExternal isHoverBoxEnabled={false} to={work?.websiteUrl}>
+              <CustomLink
+                isExternal
+                isHoverBoxEnabled={false}
+                to={work?.websiteUrl}
+              >
                 Website
-              </Link>
+              </CustomLink>
             </Point>
           ) : null}
         </KeyPoint>

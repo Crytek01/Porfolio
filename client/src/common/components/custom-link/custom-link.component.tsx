@@ -1,8 +1,8 @@
 import { FunctionComponent } from 'react';
 
-import { ExternalLink, RouterLink } from './link.styles';
+import { ExternalLink, RouterLink } from './custom-link.styles';
 
-export interface ILinkOptions {
+export interface ICustomLinkOptions {
   target?: '_self' | '_blank';
   activeColor?: string;
   color?: string;
@@ -13,7 +13,7 @@ interface ILink {
   isExternal?: boolean;
   isHoverBoxEnabled?: boolean;
   onClick?: () => void;
-  options?: ILinkOptions;
+  options?: ICustomLinkOptions;
   children: React.ReactNode;
   className?: string;
 }
@@ -24,7 +24,7 @@ const DEFAULT_OPTIONS = {
   activeColor: '#6e9cf8;',
 };
 
-export const Link: FunctionComponent<ILink> = ({
+export const CustomLink: FunctionComponent<ILink> = ({
   isExternal = false,
   isHoverBoxEnabled = true,
   options = {},

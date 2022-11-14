@@ -1,4 +1,4 @@
-import { Link } from '@common/components/link/link.component';
+import { CustomLink } from '@common/components/custom-link/custom-link.component';
 import { Tag } from '@common/components/tag/tag.component';
 import { Typography } from '@common/components/typography/typography.component';
 import styled from 'styled-components';
@@ -71,6 +71,6 @@ export const CVTag = styled(Tag)`
   font-size: ${({ theme: { fontSize } }) => fontSize[0]};
 `;
 
-export const DownloadLink = styled(Link)`
+export const DownloadLink = styled(CustomLink)`
   font-size: ${({ theme: { fontSize } }) => fontSize[0]};
 `;
