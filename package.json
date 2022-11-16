@@ -9,10 +9,10 @@
   },
   "scripts": {
     "install": "cd client && npm install --dev && cd ../server && npm install --dev",
-    "postinstall": "cd client && npm run test && cd ../server && npm run prebuild",
+    "postinstall": "cd client && npm run lint && npm run test && cd ../server && npm run prebuild",
     "build": "cd client && npm run build && cd ../server && npm run build:release",
     "start": "cd server/build/src && node server.js"
-  },
+  }, 
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Crytek01/Porfolio.git"
