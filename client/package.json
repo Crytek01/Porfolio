@@ -14,7 +14,8 @@
     "lint": "eslint --ext .js,.jsx,.ts,.tsx src",
     "lint:fix": "eslint --ext .js,.jsx,.ts,.tsx src --fix",
     "format": "prettier --write src/**/*.{ts,tsx,scss,css,json}",
-    "test": "vitest",
+    "test:dev": "vitest",
+    "test": "vitest run",
     "coverage": "vitest run --coverage"
   },
   "dependencies": {
