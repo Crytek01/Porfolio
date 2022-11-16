@@ -5,8 +5,6 @@ import { ThemeProvider } from 'styled-components';
 
 import { theme } from './infrastructure/theme';
 
-import './App.css';
-
 function App() {
   return (
     <div className="App">
