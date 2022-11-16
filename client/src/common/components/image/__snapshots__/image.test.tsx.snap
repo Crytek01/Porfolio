@@ -7,7 +7,6 @@ exports[`Image component Test > renders correctly 1`] = `
     <source />
     <styled.img
       isVisible={false}
-      loading="lazy"
       onLoad={[Function]}
     />
     <Styled(Spinner)

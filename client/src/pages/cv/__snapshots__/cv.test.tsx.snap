@@ -3,34 +3,34 @@
 exports[`CV page component Test > renders correctly 1`] = `
 <Article>
   <section>
-    <Styled(Typography)>
+    <Styled(Component)>
       Work Experience
-    </Styled(Typography)>
+    </Styled(Component)>
     <Spacer
       size={6}
     />
-    <Styled(Typography)>
+    <Styled(Component)>
       Multiplied Solutions (Jun 2022 - Present):
-    </Styled(Typography)>
+    </Styled(Component)>
     <Spacer
       size={4}
     />
-    <Styled(Typography)>
+    <Styled(Component)>
       I worked for four months as a full-stack React / Node developer on an internal project about coding interviews, refactoring code, improving authentication backend-side and client-side, implementing real-time coding between the interviewers and the interviewee, and implementing code compilation of multiple languages for the interviewees.
       <br />
       <br />
       For the last few months, I started working with an external client as a Web Developer Consultant with HTML5/ CSS3/ JS and WordPress Gutenberg as CMS.
-    </Styled(Typography)>
+    </Styled(Component)>
     <Spacer
       size={6}
     />
-    <Styled(Typography)>
+    <Styled(Component)>
       Accenture (Feb 2022 - Jun 2022):
-    </Styled(Typography)>
+    </Styled(Component)>
     <Spacer
       size={4}
     />
-    <Styled(Typography)>
+    <Styled(Component)>
       I worked for three months on different client projects as a Web Developer Analyst consultant with React and Angular technologies, refactoring code, fixing bugs, and developing new features.
       <br />
       <br />
@@ -38,13 +38,13 @@ exports[`CV page component Test > renders correctly 1`] = `
       <br />
       <br />
       In the Angular project, I worked on fixing bugs and refactoring code.
-    </Styled(Typography)>
+    </Styled(Component)>
     <Spacer
       size={6}
     />
-    <Styled(Typography)>
+    <Styled(Component)>
       Gorilla Logic (Jul 2021 - Dec 2021):
-    </Styled(Typography)>
+    </Styled(Component)>
     <Spacer
       size={3}
     />
@@ -62,12 +62,12 @@ exports[`CV page component Test > renders correctly 1`] = `
     <Spacer
       size={4}
     />
-    <Styled(Typography)>
+    <Styled(Component)>
       I worked for nearly six months as a Front End Developer Intern with a Scrum agile team on a complex Angular application about private stocks that makes management easy and intelligent for private companies.
       <br />
       <br />
       And worked proactively fixing bugs at the start, then worked on taking small user stories and owning the whole process responsibility, and then started taking complex user stories and working closely with the Quality Assurance team and Backend team.
-    </Styled(Typography)>
+    </Styled(Component)>
   </section>
 </Article>
 `;

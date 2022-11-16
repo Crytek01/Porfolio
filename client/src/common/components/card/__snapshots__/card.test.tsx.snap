@@ -19,7 +19,6 @@ exports[`Card component Test > renders correctly 1`] = `
       <img
         alt="description"
         className="sc-eDvSVe gxsJM sc-iBYQkv ftFZOW"
-        loading="lazy"
         onLoad={[Function]}
         src="basic image"
       />
@@ -34,9 +33,6 @@ exports[`Card component Test > renders correctly 1`] = `
   >
     <h3
       className="sc-gswNZR gXqiCu"
-      color="#555"
-      fontSize="2rem"
-      fontWeight={500}
     >
       title
     </h3>
@@ -46,9 +42,6 @@ exports[`Card component Test > renders correctly 1`] = `
     />
     <p
       className="sc-gswNZR dgIsqM"
-      color="#555"
-      fontSize="1.4rem"
-      fontWeight={400}
     >
       information
     </p>

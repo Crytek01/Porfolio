@@ -15,9 +15,9 @@ exports[`Pop menu component Test > renders correctly 1`] = `
       }
       to="/test1"
     >
-      <Styled(Typography)>
+      <Styled(Component)>
         Test1
-      </Styled(Typography)>
+      </Styled(Component)>
     </Styled(CustomLink)>
   </styled.li>
   <styled.li>
@@ -30,9 +30,9 @@ exports[`Pop menu component Test > renders correctly 1`] = `
       }
       to="/test2"
     >
-      <Styled(Typography)>
+      <Styled(Component)>
         Test2
-      </Styled(Typography)>
+      </Styled(Component)>
     </Styled(CustomLink)>
   </styled.li>
   <styled.li>
@@ -46,9 +46,9 @@ exports[`Pop menu component Test > renders correctly 1`] = `
       }
       to="/test3"
     >
-      <Styled(Typography)>
+      <Styled(Component)>
         Test3
-      </Styled(Typography)>
+      </Styled(Component)>
     </Styled(CustomLink)>
   </styled.li>
 </styled.ul>
