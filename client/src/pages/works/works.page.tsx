@@ -23,12 +23,10 @@ const WorksPage: FunctionComponent = () => {
       <header>
         <Title>My Works</Title>
       </header>
-
       <Spacer size={5} />
 
       <SectionContainer>
         <SubTitle>Javascript / TS / React</SubTitle>
-
         <Spacer size={6} />
 
         <GridContainer>

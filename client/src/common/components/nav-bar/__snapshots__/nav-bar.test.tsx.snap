@@ -6,7 +6,7 @@ exports[`Nav bar component Test > renders correctly 1`] = `
     to="/"
   >
     <styled.p>
-      Erick Badilla Portfolio
+      Erick Badilla's Portfolio
     </styled.p>
   </Styled(Link)>
   <styled.ul>

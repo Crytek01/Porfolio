@@ -59,7 +59,7 @@ export const NavBar: FunctionComponent = () => {
   return (
     <NavContainer>
       <RouterLink to="/">
-        <PorfolioName>Erick Badilla Portfolio</PorfolioName>
+        <PorfolioName>Erick Badilla's Portfolio</PorfolioName>
       </RouterLink>
 
       {!isMobile && (

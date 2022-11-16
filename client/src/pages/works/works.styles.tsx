@@ -12,7 +12,7 @@ export const SectionContainer = styled.section`
 
 export const Title = styledWithProps(Typography, {
   as: 'h2',
-  size: 'b1',
+  size: 'h2',
   weight: 'semiBold',
 })`
   @media (max-width: 35.5em) {
@@ -22,7 +22,7 @@ export const Title = styledWithProps(Typography, {
 
 export const SubTitle = styledWithProps(Typography, {
   as: 'h3',
-  size: 'b2',
+  size: 'h3',
   weight: 'medium',
 })`
   @media (max-width: 35.5em) {
