@@ -2,9 +2,9 @@ import { Link } from 'react-router-dom';
 import styled, { css } from 'styled-components';
 
 interface ILink {
-  color: string;
-  activeColor: string;
-  isHoverBoxEnabled: boolean;
+  $color: string;
+  $activeColor: string;
+  $isHoverBoxEnabled: boolean;
 }
 
 const DefaultLinkStyles = css`
@@ -30,14 +30,14 @@ export const RouterLink = styled(Link)<ILink>`
 
   &:link,
   &:visited {
-    color: ${({ color }) => color};
+    color: ${({ $color }) => $color};
   }
 
   &:hover,
   &:active {
-    color: ${({ activeColor }) => activeColor};
-    box-shadow: ${({ isHoverBoxEnabled }) =>
-      isHoverBoxEnabled ? '0 0 0 0.4rem rgba(0, 204, 255, 0.5)' : 'none'};
+    color: ${({ $activeColor }) => $activeColor};
+    box-shadow: ${({ $isHoverBoxEnabled }) =>
+      $isHoverBoxEnabled ? '0 0 0 0.4rem rgba(0, 204, 255, 0.5)' : 'none'};
   }
 `;
 
@@ -51,8 +51,8 @@ export const ExternalLink = styled.a<ILink>`
 
   &:hover,
   &:active {
-    color: ${({ activeColor }) => activeColor};
-    box-shadow: ${({ isHoverBoxEnabled }) =>
-      isHoverBoxEnabled ? '0 0 0 0.4rem rgba(0, 204, 255, 0.5)' : 'none'};
+    color: ${({ $activeColor }) => $activeColor};
+    box-shadow: ${({ $isHoverBoxEnabled }) =>
+      $isHoverBoxEnabled ? '0 0 0 0.4rem rgba(0, 204, 255, 0.5)' : 'none'};
   }
 `;

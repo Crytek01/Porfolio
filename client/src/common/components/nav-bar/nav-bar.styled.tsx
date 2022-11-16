@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { styledWithProps } from '@common/utils/styled-components/styled-components.util';
 import { Construction, GitHub, HomeWork, LinkedIn } from '@mui/icons-material';
 import styled, { css } from 'styled-components';
 
@@ -89,10 +90,10 @@ const iconSizeConfiguration = {
   },
 };
 
-export const GithubIcon = styled(GitHub).attrs(iconSizeConfiguration)``;
+export const GithubIcon = styledWithProps(GitHub, iconSizeConfiguration)``;
 
-export const LinkedinIcon = styled(LinkedIn).attrs(iconSizeConfiguration)``;
+export const LinkedinIcon = styledWithProps(LinkedIn, iconSizeConfiguration)``;
 
-export const WorksIcon = styled(Construction).attrs(iconSizeConfiguration)``;
+export const WorksIcon = styledWithProps(Construction, iconSizeConfiguration)``;
 
-export const CvIcon = styled(HomeWork).attrs(iconSizeConfiguration)``;
+export const CvIcon = styledWithProps(HomeWork, iconSizeConfiguration)``;

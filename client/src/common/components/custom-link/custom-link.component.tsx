@@ -33,14 +33,18 @@ export const CustomLink: FunctionComponent<ILink> = ({
   to = '#',
   onClick,
 }) => {
-  const currentOptions = { ...DEFAULT_OPTIONS, ...options };
+  const standardOptions = { ...DEFAULT_OPTIONS, ...options };
+
+  const { activeColor, color, ...currentOptions } = standardOptions;
 
   return isExternal ? (
     <ExternalLink
       className={className}
       href={to}
       onClick={onClick}
-      isHoverBoxEnabled={isHoverBoxEnabled}
+      $isHoverBoxEnabled={isHoverBoxEnabled}
+      $color={color}
+      $activeColor={activeColor}
       {...currentOptions}
     >
       {children}
@@ -50,9 +54,9 @@ export const CustomLink: FunctionComponent<ILink> = ({
       className={className}
       to={to}
       onClick={onClick}
-      color={currentOptions.color}
-      activeColor={currentOptions.activeColor}
-      isHoverBoxEnabled={isHoverBoxEnabled}
+      $color={color}
+      $activeColor={activeColor}
+      $isHoverBoxEnabled={isHoverBoxEnabled}
     >
       {children}
     </RouterLink>

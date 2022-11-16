@@ -1,14 +1,15 @@
 import { CustomLink } from '@common/components/custom-link/custom-link.component';
 import { Tag } from '@common/components/tag/tag.component';
 import { Typography } from '@common/components/typography/typography.component';
+import { styledWithProps } from '@common/utils/styled-components/styled-components.util';
 import styled from 'styled-components';
 
 const tableQuery = '(max-width: 31.5em)';
 const mobileQuery = '(max-width: 28em)';
 const smallMobileQuery = '(max-width: 22em)';
 
-export const Title = styled(Typography).attrs({
-  forwardedAs: 'h2',
+export const Title = styledWithProps(Typography, {
+  as: 'h2',
   size: 'h2',
   weight: 'semiBold',
 })`
@@ -25,8 +26,8 @@ export const Title = styled(Typography).attrs({
   }
 `;
 
-export const SubTitle = styled(Typography).attrs({
-  forwardedAs: 'h3',
+export const SubTitle = styledWithProps(Typography, {
+  as: 'h3',
   size: 'h3',
   weight: 'medium',
 })`
@@ -41,8 +42,8 @@ export const SubTitle = styled(Typography).attrs({
   }
 `;
 
-export const Text = styled(Typography).attrs({
-  forwardedAs: 'p',
+export const Text = styledWithProps(Typography, {
+  as: 'p',
   size: 'b3',
   weight: 'regular',
   lineHeight: 1.6,

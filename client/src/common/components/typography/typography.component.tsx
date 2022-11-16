@@ -15,6 +15,7 @@ type TElement = {
   h4: 'h4';
   h5: 'h5';
   h6: 'h6';
+  span: 'span';
 };
 
 export const styleSize = {
@@ -83,11 +84,11 @@ export const Typography: FunctionComponent<TTypography> = ({
     <TypoElement
       className={className}
       as={as}
-      fontSize={styleSize[size]}
-      fontWeight={styleWeight[weight]}
-      textAlign={align}
-      color={colors.text[color]}
-      lineHeight={lineHeight}
+      $fontSize={styleSize[size]}
+      $fontWeight={styleWeight[weight]}
+      $textAlign={align}
+      $color={colors.text[color]}
+      $lineHeight={lineHeight}
       {...innerHtmlProp}
     >
       {children}

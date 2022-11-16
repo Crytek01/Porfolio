@@ -1,4 +1,5 @@
 import { CustomLink } from '@common/components/custom-link/custom-link.component';
+import { styledWithProps } from '@common/utils/styled-components/styled-components.util';
 import styled, { css } from 'styled-components';
 
 import { styleSize, Typography } from '../typography/typography.component';
@@ -68,7 +69,7 @@ export const PopLink = styled(CustomLink)`
   padding: 1rem;
 `;
 
-export const PopLinkName = styled(Typography).attrs({
+export const PopLinkName = styledWithProps(Typography, {
   size: 'b3',
   color: 'semiBoldGrey',
   weight: 'medium',

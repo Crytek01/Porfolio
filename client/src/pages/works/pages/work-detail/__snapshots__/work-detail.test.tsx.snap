@@ -1,0 +1,38 @@
+// Vitest Snapshot v1
+
+exports[`Work details page component Test > renders correctly 1`] = `
+<ForwardRef(MotionComponent)
+  animate="animate"
+  exit="exit"
+  initial="initial"
+  transition={
+    {
+      "default": {
+        "ease": "linear",
+      },
+      "delay": 0.1,
+      "x": {
+        "duration": 0.5,
+      },
+    }
+  }
+  variants={
+    {
+      "animate": {
+        "opacity": 1,
+        "x": 0,
+      },
+      "exit": {
+        "opacity": 0,
+        "x": 0,
+      },
+      "initial": {
+        "opacity": 0,
+        "x": "0",
+      },
+    }
+  }
+>
+  <WorkDetailPage />
+</ForwardRef(MotionComponent)>
+`;

@@ -22,8 +22,18 @@ export const Image: FunctionComponent<IImage> = ({
   className,
 }) => {
   const [loading, setLoading] = useState(true);
+  const [dimensions, setDimensions] = useState<{
+    width: number;
+    height: number;
+  } | null>(null);
 
-  const onImageLoad = () => setLoading(false);
+  const onImageLoad: React.ReactEventHandler<HTMLImageElement> = (img) => {
+    setLoading(false);
+    setDimensions({
+      height: img.currentTarget.clientHeight,
+      width: img.currentTarget.clientWidth,
+    });
+  };
 
   return (
     <ImageContainer className={className}>

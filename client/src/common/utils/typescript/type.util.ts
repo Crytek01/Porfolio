@@ -11,3 +11,8 @@ export type NeverTogether<
         [k in Key1]?: never;
       } & { [k in Key2]: A[Key2] })
   );
+
+export type RenameObjectKey<T, K extends keyof T, N extends string> = Pick<
+  T,
+  Exclude<keyof T, K>
+> & { [P in N]: T[K] };

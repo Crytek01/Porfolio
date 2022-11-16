@@ -53,7 +53,7 @@ export const CardTitle = withProps(Typography, {
   align: 'center',
 });
 
-export const CardDescription = styled(Typography).attrs({
+export const CardDescription = withProps(Typography, {
   size: 'b4',
   align: 'center',
   lineHeight: 1.4,

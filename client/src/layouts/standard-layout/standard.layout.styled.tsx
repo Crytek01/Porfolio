@@ -1,4 +1,5 @@
 import { Typography } from '@common/components/typography/typography.component';
+import { styledWithProps } from '@common/utils/styled-components/styled-components.util';
 import styled from 'styled-components';
 
 export const Header = styled.header`
@@ -15,7 +16,7 @@ export const Header = styled.header`
   background-color: #fff;
 `;
 
-export const FooterText = styled(Typography).attrs({
+export const FooterText = styledWithProps(Typography, {
   size: 'b5',
   color: 'lightGrey',
   align: 'center',

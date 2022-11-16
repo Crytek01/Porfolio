@@ -6,7 +6,7 @@ exports[`Pop menu component Test > renders correctly 1`] = `
   onClick={[Function]}
 >
   <styled.li>
-    <Styled(Link)
+    <Styled(CustomLink)
       onClick={[Function]}
       options={
         {
@@ -18,10 +18,10 @@ exports[`Pop menu component Test > renders correctly 1`] = `
       <Styled(Typography)>
         Test1
       </Styled(Typography)>
-    </Styled(Link)>
+    </Styled(CustomLink)>
   </styled.li>
   <styled.li>
-    <Styled(Link)
+    <Styled(CustomLink)
       onClick={[Function]}
       options={
         {
@@ -33,10 +33,10 @@ exports[`Pop menu component Test > renders correctly 1`] = `
       <Styled(Typography)>
         Test2
       </Styled(Typography)>
-    </Styled(Link)>
+    </Styled(CustomLink)>
   </styled.li>
   <styled.li>
-    <Styled(Link)
+    <Styled(CustomLink)
       isExternal={true}
       onClick={[Function]}
       options={
@@ -49,7 +49,7 @@ exports[`Pop menu component Test > renders correctly 1`] = `
       <Styled(Typography)>
         Test3
       </Styled(Typography)>
-    </Styled(Link)>
+    </Styled(CustomLink)>
   </styled.li>
 </styled.ul>
 `;

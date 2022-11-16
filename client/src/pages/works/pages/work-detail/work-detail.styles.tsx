@@ -3,6 +3,7 @@ import {
   styleSize,
   Typography,
 } from '@common/components/typography/typography.component';
+import { styledWithProps } from '@common/utils/styled-components/styled-components.util';
 import { Article as ArticleComponent } from '@layouts/article/article.component';
 import styled, { css } from 'styled-components';
 
@@ -23,21 +24,19 @@ export const StyledArticle = styled(ArticleComponent)`
 
 const imageDefaultStyles = css`
   border-radius: 11px;
-  width: 100%;
 `;
 
 export const LogoImage = styled(Image)`
   ${imageDefaultStyles}
-  height: auto;
+  height: clamp(5rem,50vw,30rem)
 `;
 
 export const PreviewImage = styled(Image)`
   ${imageDefaultStyles}
-  height: 45.1rem;
-  height: auto;
+  height: clamp(20rem,50vw,30rem)
 `;
 
-export const Description = styled(Typography).attrs({
+export const Description = styledWithProps(Typography, {
   size: 'b3',
   lineHeight: 1.5,
   align: 'justify',
@@ -76,7 +75,7 @@ export const KeyPoint = styled.li`
   }
 `;
 
-export const Point = styled(Typography).attrs({
+export const Point = styledWithProps(Typography, {
   size: 'b4',
 })`
   @media ${tabletBreakpoint} {
@@ -85,9 +84,9 @@ export const Point = styled(Typography).attrs({
   }
 `;
 
-export const PreviewTitle = styled(Typography).attrs({
+export const PreviewTitle = styledWithProps(Typography, {
   size: 'h4',
-  forwardedAs: 'h4',
+  as: 'h4',
   weight: 'semiBold',
 })`
   padding: ${({ theme: { spacing } }) => spacing[0]};

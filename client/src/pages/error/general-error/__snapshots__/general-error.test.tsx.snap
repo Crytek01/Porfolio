@@ -1,0 +1,13 @@
+// Vitest Snapshot v1
+
+exports[`General page component Test > renders correctly 1`] = `
+<styled.div>
+  <Styled(SvgPlugsConnectionOutlineSvg) />
+  <styled.h1>
+    Something went wrong...
+  </styled.h1>
+  <styled.p>
+    Please try again later.
+  </styled.p>
+</styled.div>
+`;

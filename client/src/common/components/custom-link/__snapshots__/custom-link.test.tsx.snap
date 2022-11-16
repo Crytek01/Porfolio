@@ -1,0 +1,12 @@
+// Vitest Snapshot v1
+
+exports[`Link component Test > renders correctly 1`] = `
+<Styled(Link)
+  activeColor="#6e9cf8;"
+  color="#1976d2"
+  isHoverBoxEnabled={true}
+  to="#"
+>
+  Link
+</Styled(Link)>
+`;

@@ -1,0 +1,11 @@
+// Vitest Snapshot v1
+
+exports[`Loading page component Test > renders correctly 1`] = `
+<styled.div>
+  <Styled(Spinner)
+    isRunning={true}
+    size={30}
+    top={50}
+  />
+</styled.div>
+`;

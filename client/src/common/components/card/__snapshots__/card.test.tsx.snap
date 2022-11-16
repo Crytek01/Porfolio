@@ -18,7 +18,8 @@ exports[`Card component Test > renders correctly 1`] = `
       />
       <img
         alt="description"
-        className="sc-eDvSVe eDOEMm sc-iBYQkv ftFZOW"
+        className="sc-eDvSVe gxsJM sc-iBYQkv ftFZOW"
+        loading="lazy"
         onLoad={[Function]}
         src="basic image"
       />

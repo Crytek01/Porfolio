@@ -44,7 +44,7 @@ export const PopMenu: FunctionComponent<IPopMenu> = ({
         >
           <PopLinkName>{name}</PopLinkName>
         </PopLink>
-      </MenuItem>
+      </MenuItem> 
     ))}
   </PopMenuContainer>
 );

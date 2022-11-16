@@ -27,4 +27,11 @@ export default defineConfig({
   },
   // eslint-disable-next-line @typescript-eslint/ban-ts-comment
   //@ts-ignore
+  test: {
+    globals: true,
+    environment: 'jsdom',
+    setupFiles: [path.resolve(__dirname, './test-setup.ts')],
+    threads: true,
+    maxThreads: 8,
+  },
 });

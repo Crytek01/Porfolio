@@ -5,5 +5,5 @@ export const withProps =
     Component: React.ComponentType<P>,
     passedProps: P
   ): FunctionComponent<P> =>
-  ({ ...props }) =>
+  ({ ...props }: P) =>
     <Component {...passedProps} {...props} />;

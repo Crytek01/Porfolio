@@ -2,11 +2,12 @@ import {
   styleSize,
   Typography,
 } from '@common/components/typography/typography.component';
+import { styledWithProps } from '@common/utils/styled-components/styled-components.util';
 import styled from 'styled-components';
 
-export const Title = styled(Typography).attrs({
+export const Title = styledWithProps(Typography, {
   size: 'h1',
-  forwardedAs: 'h1',
+  as: 'h1',
   weight: 'bold',
 })`
   @media (max-width: 33em) {
@@ -18,7 +19,7 @@ export const Title = styled(Typography).attrs({
   }
 `;
 
-export const DeveloperRoles = styled(Typography).attrs({
+export const DeveloperRoles = styledWithProps(Typography, {
   size: 'b3',
 })`
   @media (max-width: 33em) {
@@ -31,7 +32,7 @@ export const DeveloperRoles = styled(Typography).attrs({
   }
 `;
 
-export const SectionTitle = styled(Typography).attrs({
+export const SectionTitle = styledWithProps(Typography, {
   size: 'h2',
   weight: 'semiBold',
   lineHeight: 1.3,
@@ -48,7 +49,7 @@ export const SectionTitle = styled(Typography).attrs({
   }
 `;
 
-export const SectionText = styled(Typography).attrs({
+export const SectionText = styledWithProps(Typography, {
   size: 'b3',
   lineHeight: 1.6,
 })`
@@ -89,8 +90,8 @@ export const BiographyItem = styled.li`
   }
 `;
 
-export const BiographyBoldText = styled(Typography).attrs({
-  forwardedAs: 'span',
+export const BiographyBoldText = styledWithProps(Typography, {
+  as: 'span',
   size: 'b4',
   weight: 'bold',
   lineHeight: 1.7,

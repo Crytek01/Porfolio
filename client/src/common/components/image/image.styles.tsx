@@ -6,7 +6,7 @@ interface IImage {
   isVisible: boolean;
 }
 
-export const ImageContainer = styled.div`
+ export const ImageContainer = styled.div`
   position: relative;
 `;
 
