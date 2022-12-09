@@ -32,6 +32,5 @@ export default defineConfig({
     environment: 'jsdom',
     setupFiles: [path.resolve(__dirname, './test-setup.ts')],
     threads: true,
-    maxThreads: 8,
   },
 });
