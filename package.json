@@ -4,13 +4,12 @@
   "description": "",
   "main": "index.js",
   "engines": {
-    "node": "16.14.2",
-    "npm": "8.5.0"
+    "node": "16.14.2"
   },
   "scripts": {
-    "install": "cd client && npm install --dev && cd ../server && npm install --dev",
-    "postinstall": "cd client && npm run lint && npm run test && cd ../server && npm run prebuild",
-    "build": "cd client && npm run build && cd ../server && npm run build:release",
+    "install": "cd client && yarn install && cd ../server && yarn install",
+    "postinstall": "cd client && yarn lint && yarn test && cd ../server && yarn prebuild",
+    "build": "cd client && yarn build && cd ../server && yarn build:release",
     "start": "cd server/build/src && node server.js"
   }, 
   "repository": {
