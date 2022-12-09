@@ -6,7 +6,6 @@ import xss from 'xss-clean';
 import compression from 'compression';
 import enforce from 'express-sslify';
 
-import path from 'path';
 
 const app = express();
 
