@@ -6,6 +6,7 @@ import xss from 'xss-clean';
 import compression from 'compression';
 import enforce from 'express-sslify';
 
+import path from 'path';
 
 const app = express();
 
@@ -38,7 +39,7 @@ if (process.env.NODE_ENV === 'production') {
   );
   app.use(express.static('../../client/dist'));
   app.get('*', function (_request, response) {
-    response.sendFile('../../client/dist/index.html');
+    response.sendFile(path.join('/client/dist', 'index.html'));
   });
 }
 
