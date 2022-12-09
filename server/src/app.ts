@@ -37,9 +37,9 @@ if (process.env.NODE_ENV === 'production') {
       trustProtoHeader: true,
     }),
   );
-  app.use(express.static('/client/dist'));
+  app.use(express.static('../../client/dist'));
   app.get('*', function (_request, response) {
-    response.sendFile(path.join('/client/dist', 'index.html'));
+    response.sendFile('../../client/dist/index.html');
   });
 }
 
