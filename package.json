@@ -1,26 +1,57 @@
 {
   "name": "portfolio",
+  "private": true,
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "type": "module",
   "engines": {
     "node": "16.14.2"
   },
   "scripts": {
-    "install": "cd client && yarn install && cd ../server && yarn install",
-    "postinstall": "cd client && yarn lint && yarn test && cd ../server && yarn prebuild",
-    "build": "cd client && yarn build && cd ../server && yarn build:release",
-    "start": "cd server/build/src && node server.js"
-  }, 
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Crytek01/Porfolio.git"
+    "dev": "vite --host",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "lint": "eslint --ext .js,.jsx,.ts,.tsx src",
+    "lint:fix": "eslint --ext .js,.jsx,.ts,.tsx src --fix",
+    "format": "prettier --write src/**/*.{ts,tsx,scss,css,json}",
+    "test:dev": "vitest",
+    "test": "vitest run",
+    "coverage": "vitest run --coverage"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Crytek01/Porfolio/issues"
+  "dependencies": {
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "@mui/icons-material": "^5.10.9",
+    "@mui/material": "^5.10.12",
+    "framer-motion": "^7.6.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.4.2",
+    "sanitize-html": "^2.7.3",
+    "slugify": "^1.6.5",
+    "styled-components": "^5.3.6"
   },
-  "homepage": "https://github.com/Crytek01/Porfolio#readme"
+  "devDependencies": {
+    "react-test-renderer": "^18.2.0",
+    "@types/node": "^18.11.9",
+    "@types/react": "^18.0.17",
+    "@types/react-dom": "^18.0.6",
+    "@types/react-test-renderer": "^18.0.0",
+    "@types/sanitize-html": "^2.6.2",
+    "@types/styled-components": "^5.1.26",
+    "@typescript-eslint/eslint-plugin": "^5.41.0",
+    "@vitejs/plugin-react": "^2.1.0",
+    "@vitest/coverage-c8": "^0.25.1",
+    "eslint": "^8.26.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-config-react-app": "^7.0.1",
+    "eslint-plugin-simple-import-sort": "^8.0.0",
+    "jsdom": "^20.0.2",
+    "prettier": "^2.7.1",
+    "typescript": "^4.8.4",
+    "vite": "^3.1.0",
+    "vite-plugin-compression": "^0.5.1",
+    "vite-plugin-node-polyfills": "^0.5.0",
+    "vite-plugin-svgr": "^2.2.2",
+    "vitest": "^0.25.1"
+  }
 }

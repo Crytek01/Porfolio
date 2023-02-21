@@ -16,7 +16,7 @@ const animations: Variants = {
   },
 };
 
-export const withStandartAnimation =
+export const withStandardAnimation =
   <P extends object>(Component: React.ComponentType<P>): FunctionComponent<P> =>
   ({ ...props }) =>
     (
@@ -26,7 +26,7 @@ export const withStandartAnimation =
         animate="animate"
         exit="exit"
         transition={{
-          type: 'just',
+          type: 'tween',
         }}
       >
         <Component {...(props as P)} />

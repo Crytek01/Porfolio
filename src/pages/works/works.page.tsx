@@ -1,7 +1,7 @@
 import { FunctionComponent } from 'react';
 import { Card } from '@common/components/card/card.component';
 import { Spacer } from '@common/components/spacer/spacer.component';
-import { withStandartAnimation } from '@common/hocs/standart-animation.hoc';
+import { withStandardAnimation } from '@common/hocs/standart-animation.hoc';
 import { Article } from '@layouts/article/article.component';
 import slugify from 'slugify';
 
@@ -46,4 +46,4 @@ const WorksPage: FunctionComponent = () => {
   );
 };
 
-export default withStandartAnimation(WorksPage);
+export default withStandardAnimation(WorksPage);

@@ -1,6 +1,6 @@
 import { FunctionComponent } from 'react';
 import { Spacer } from '@common/components/spacer/spacer.component';
-import { withStandartAnimation } from '@common/hocs/standart-animation.hoc';
+import { withStandardAnimation } from '@common/hocs/standart-animation.hoc';
 import { Article } from '@layouts/article/article.component';
 
 import {
@@ -79,4 +79,4 @@ export const CVPage: FunctionComponent = () => {
   );
 };
 
-export default withStandartAnimation(CVPage);
+export default withStandardAnimation(CVPage);

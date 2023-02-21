@@ -1,5 +1,5 @@
 import { Spacer } from '@common/components/spacer/spacer.component';
-import { withStandartAnimation } from '@common/hocs/standart-animation.hoc';
+import { withStandardAnimation } from '@common/hocs/standart-animation.hoc';
 import { useMediaQuery } from '@common/hooks/media-query/use-media-query.hook';
 import { Article } from '@layouts/article/article.component';
 
@@ -118,4 +118,4 @@ const HomePage = () => {
   );
 };
 
-export default withStandartAnimation(HomePage);
+export default withStandardAnimation(HomePage);
