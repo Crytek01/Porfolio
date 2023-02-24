@@ -22,7 +22,7 @@ export const StandardLayout: FunctionComponent<IStandardLayout> = ({
 
       <footer>
         <Container>
-          <FooterText>&copy; 2022 Erick Badilla</FooterText>
+          <FooterText>&copy; 2023 Erick Badilla</FooterText>
         </Container>
       </footer>
     </Fragment>
