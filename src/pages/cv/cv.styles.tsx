@@ -61,7 +61,7 @@ export const Text = styledWithProps(Typography, {
   }
 `;
 
-export const RecomendationContainer = styled.div`
+export const RecommendationContainer = styled.div`
   display: flex;
   gap: ${({ theme: { spacing } }) => spacing[3]};
   align-items: center;

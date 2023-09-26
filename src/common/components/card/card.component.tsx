@@ -28,13 +28,22 @@ export const Card: FunctionComponent<ICard> = ({
       optimizedType={logoImage.optimized.type}
     />
 
+    <Spacer size={3} />
+
     <TextContainer>
-      <Typography as="h3" size="h3" weight="medium" align="center">
+      <Typography
+        as="h3"
+        size="h3"
+        weight="medium"
+        align="center"
+        color="semiBoldGrey"
+      >
         {title}
       </Typography>
+
       <Spacer size={2} />
 
-      <Typography size="b4" align="center" lineHeight={1.4}>
+      <Typography size="b4" align="center" lineHeight={1.4} color="lightGrey">
         {information}
       </Typography>
     </TextContainer>

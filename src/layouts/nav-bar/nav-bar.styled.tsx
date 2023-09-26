@@ -51,7 +51,7 @@ export const ExternalLink = styled.a`
   ${LinkStyle}
 `;
 
-export const PorfolioName = styled.p`
+export const PortfolioName = styled.p`
   font-size: ${({ theme: { fontSize } }) => fontSize[4]};
   font-weight: ${({ theme: { fontWeight } }) => fontWeight.semibold};
 

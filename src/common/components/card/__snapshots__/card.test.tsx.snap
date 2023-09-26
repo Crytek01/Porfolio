@@ -1,11 +1,11 @@
-// Vitest Snapshot v1
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
 exports[`Card component Test > renders correctly 1`] = `
 <div
-  className="sc-gKPRtg eA-dsLn"
+  className="sc-gLLuHO jdXbOb"
 >
   <div
-    className="sc-hLBbgP gAvAzt sc-iBYQkv ftFZOW"
+    className="sc-hLQTFJ gPnkWN sc-iBdoyZ eeTSUb"
   >
     <picture>
       <source
@@ -18,30 +18,35 @@ exports[`Card component Test > renders correctly 1`] = `
       />
       <img
         alt="description"
-        className="sc-eDvSVe gxsJM sc-iBYQkv ftFZOW"
+        className="sc-eDLKEg gzGOTz sc-iBdoyZ eeTSUb"
         onLoad={[Function]}
         src="basic image"
       />
       <div
-        className="sc-dkrFOg jGJVgg sc-jSUZER gHhgjy"
-        size={50}
+        className="sc-dmyDmy khPhRN sc-jTQDJr hrubtu"
       />
     </picture>
   </div>
   <div
-    className="sc-ftTHYK dGFSPJ"
+    className="sc-beyTiQ kqiajG"
+    position="margin-bottom"
+    size={3}
+  />
+  <div
+    className="sc-fsYfxw hVaJeq"
   >
     <h3
-      className="sc-gswNZR gXqiCu"
+      className="sc-guDMob dcCBfn"
     >
       title
     </h3>
     <div
-      className="sc-bcXHqe kiYcIC"
+      className="sc-beyTiQ bdihiV"
+      position="margin-bottom"
       size={2}
     />
     <p
-      className="sc-gswNZR dgIsqM"
+      className="sc-guDMob fXvNir"
     >
       information
     </p>

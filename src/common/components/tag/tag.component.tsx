@@ -14,7 +14,7 @@ export const Tag: FunctionComponent<ITag> = ({
   backgroundColor = theme.colors.backgroudColors.lightGreen,
   children,
 }) => (
-  <StyledTag textColor={textColor} backgroundColor={backgroundColor}>
+  <StyledTag $textColor={textColor} $backgroundColor={backgroundColor}>
     {children}
   </StyledTag>
 );

@@ -1,5 +1,5 @@
 import React, { Fragment, FunctionComponent } from 'react';
-import { NavBar } from '@common/components/nav-bar/nav-bar.component';
+import { NavBar } from '@layouts/nav-bar/nav-bar.component';
 
 import { Container } from '../container/container.styled';
 

@@ -1,8 +1,7 @@
 import { FunctionComponent, useState } from 'react';
+import { IMenuOptions } from '@common/components/pop-menu/pop-menu.component';
+import { SnackButton } from '@common/components/snack-button/snack-button.component';
 import { useMediaQuery } from '@common/hooks/media-query/use-media-query.hook';
-
-import { IMenuOptions } from '../pop-menu/pop-menu.component';
-import { SnackButton } from '../snack-button/snack-button.component';
 
 import {
   CvIcon,
@@ -12,7 +11,7 @@ import {
   LinkedinIcon,
   List,
   NavContainer,
-  PorfolioName,
+  PortfolioName,
   RouterLink,
   WorksIcon,
 } from './nav-bar.styled';
@@ -28,8 +27,7 @@ const SNACK_MENU_OPTIONS: IMenuOptions[] = [
     isExternal: true,
     target: '_blank',
     name: 'Github',
-    route:
-      'https://github.com/Crytek01?tab=repositories&q=&type=public&language=&sort=',
+    route: 'https://github.com/erickbadilla',
   },
   {
     isExternal: true,
@@ -59,7 +57,7 @@ export const NavBar: FunctionComponent = () => {
   return (
     <NavContainer>
       <RouterLink to="/">
-        <PorfolioName>Erick Badilla's Portfolio</PorfolioName>
+        <PortfolioName>Erick Badilla's Portfolio</PortfolioName>
       </RouterLink>
 
       {!isMobile && (
@@ -81,7 +79,7 @@ export const NavBar: FunctionComponent = () => {
           <Item>
             <ExternalLink
               target="_blank"
-              href="https://github.com/Crytek01?tab=repositories&q=&type=public&language=&sort="
+              href="https://github.com/erickbadilla"
             >
               <GithubIcon />
               <span>Github</span>

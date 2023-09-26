@@ -1,8 +1,8 @@
-// Vitest Snapshot v1
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
 exports[`Spinner component Test > renders correctly 1`] = `
 <styled.div
-  isRunning={true}
-  size={0}
+  $isRunning={true}
+  $size={0}
 />
 `;

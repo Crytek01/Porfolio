@@ -1,18 +1,12 @@
-import { FunctionComponent, lazy, Suspense } from 'react';
-import {
-  Navigate,
-  RouteObject,
-  useLocation,
-  useRoutes,
-} from 'react-router-dom';
+import { FunctionComponent } from 'react';
+import { Navigate, RouteObject, useRoutes } from 'react-router-dom';
 import ErrorBoundary from '@common/components/error-boundary/error-boundary.component';
 import { Container } from '@layouts/container/container.styled';
-import { LoadingPage } from '@pages/loading/loading.page';
+import CVPage from '@pages/cv/cv.page';
+import HomePage from '@pages/home/home.page';
 import { AnimatePresence } from 'framer-motion';
 
-const HomePage = lazy(() => import('@pages/home/home.page'));
-const WorksRoutes = lazy(() => import('../works/works.route'));
-const CVPage = lazy(() => import('@pages/cv/cv.page'));
+import WorksRoutes from '../works/works.route';
 
 const routes: RouteObject[] = [
   {
@@ -39,20 +33,12 @@ const routes: RouteObject[] = [
 ];
 
 export const AppRoutes: FunctionComponent = () => {
-  const location = useLocation();
-
-  const Routes = useRoutes(routes, location);
+  const Routes = useRoutes(routes);
 
   return (
     <Container>
       <AnimatePresence mode="wait">
-        <ErrorBoundary>
-          <Suspense
-            fallback={<LoadingPage size={100} positionTopPercentage={25} />}
-          >
-            {Routes}
-          </Suspense>
-        </ErrorBoundary>
+        <ErrorBoundary>{Routes}</ErrorBoundary>
       </AnimatePresence>
     </Container>
   );

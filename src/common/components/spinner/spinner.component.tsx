@@ -12,4 +12,4 @@ export const Spinner: FunctionComponent<ISpinner> = ({
   size,
   isRunning = true,
   className,
-}) => <Spin size={size} isRunning={isRunning} className={className} />;
+}) => <Spin $size={size} $isRunning={isRunning} className={className} />;

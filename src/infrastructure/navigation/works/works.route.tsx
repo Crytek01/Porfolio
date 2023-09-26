@@ -1,10 +1,7 @@
-import { FunctionComponent, lazy } from 'react';
+import { FunctionComponent } from 'react';
 import { Route, Routes } from 'react-router-dom';
-
-const WorksPage = lazy(() => import('@pages/works/works.page'));
-const WorkDetailsPage = lazy(
-  () => import('@pages/works/pages/work-detail/work-detail.page')
-);
+import WorkDetailsPage from '@pages/works/pages/work-detail/work-detail.page';
+import WorksPage from '@pages/works/works.page';
 
 export const WorksRoutes: FunctionComponent = () => {
   return (

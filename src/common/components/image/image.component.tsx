@@ -37,7 +37,7 @@ export const Image: FunctionComponent<IImage> = ({
           className={className}
           src={src}
           alt={alt}
-          isVisible={!loading}
+          $isVisible={!loading}
         />
         {loading ? <Spinner size={spinnerSize} isRunning={loading} /> : null}
       </picture>

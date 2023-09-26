@@ -19,7 +19,5 @@ body {
   text-rendering: optimizeLegibility;
   font-weight: 400;
   color: #555;
-
-  // background-color: #efe7db;
 }
 `;

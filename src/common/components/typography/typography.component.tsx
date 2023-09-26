@@ -66,7 +66,7 @@ export const Typography: FunctionComponent<TTypography> = ({
   size = 'b3',
   weight = 'regular',
   align = 'unset',
-  color = 'standartGrey',
+  color = 'standardGrey',
   lineHeight = 1,
   className,
   innerHtml,

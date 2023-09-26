@@ -6,7 +6,7 @@ import { Article } from '@layouts/article/article.component';
 import {
   CVTag,
   DownloadLink,
-  RecomendationContainer,
+  RecommendationContainer,
   SubTitle,
   Text,
   Title,
@@ -55,12 +55,12 @@ export const CVPage: FunctionComponent = () => {
         <SubTitle>Gorilla Logic (Jul 2021 - Dec 2021):</SubTitle>
         <Spacer size={3} />
 
-        <RecomendationContainer>
+        <RecommendationContainer>
           <CVTag>Recommendation Letter</CVTag>
           <DownloadLink to="/pdf/Recommendation Letter - Erick.pdf" isExternal>
             Download
           </DownloadLink>
-        </RecomendationContainer>
+        </RecommendationContainer>
         <Spacer size={4} />
 
         <Text>
