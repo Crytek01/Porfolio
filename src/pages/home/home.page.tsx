@@ -23,8 +23,8 @@ const HomePage = () => {
         <Spacer size={3} />
 
         <DeveloperRoles>
-          Software Developer{isMobile && <br />} (Javascript | Typescript |
-          React | Node)
+          Web Developer{isMobile && <br />} (Javascript | Typescript | React |
+          Node)
         </DeveloperRoles>
       </header>
       <Spacer size={6} />
@@ -49,7 +49,7 @@ const HomePage = () => {
 
         <BiographyList>
           <BiographyItem>
-            <BiographyBoldText>2022</BiographyBoldText>
+            <BiographyBoldText>2022 - Present</BiographyBoldText>
             <SectionText>
               Worked at Cecropia as a Software Developer consultant.
             </SectionText>
@@ -104,12 +104,6 @@ const HomePage = () => {
             <SectionText>
               In one of my jobs, I worked and learned Angular on a complex
               Project about private equity management software.
-            </SectionText>
-          </BiographyItem>
-
-          <BiographyItem>
-            <SectionText>
-              I Created an e-commerce website with React and Firebase.
             </SectionText>
           </BiographyItem>
         </BiographyList>

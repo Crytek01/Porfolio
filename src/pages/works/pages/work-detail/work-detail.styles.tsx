@@ -15,25 +15,23 @@ export const StyledArticle = styled(ArticleComponent)`
   max-width: 50rem;
 `;
 
-// export const ImageContainer = styled.picture`
-//   display: flex;
-//   justify-content: center;
-//   width: clamp(15rem, 100%, 50rem);
-//   height: auto;
-// `;
 
 const imageDefaultStyles = css`
   border-radius: 11px;
 `;
 
 export const LogoImage = styled(Image)`
-  ${imageDefaultStyles}
-  height: clamp(5rem,50vw,30rem)
+  ${imageDefaultStyles};
+  height: clamp(5rem, 50vw, 30rem);
 `;
 
 export const PreviewImage = styled(Image)`
-  ${imageDefaultStyles}
-  height: clamp(20rem,50vw,30rem)
+  ${imageDefaultStyles};
+  height: clamp(20rem, 50vw, 30rem);
+
+  &:not(:last-child) {
+    margin-bottom: 5rem;
+  }
 `;
 
 export const Description = styledWithProps(Typography, {

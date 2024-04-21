@@ -1,4 +1,4 @@
-import React, { Fragment, FunctionComponent } from 'react';
+import React, { FunctionComponent } from 'react';
 import { NavBar } from '@layouts/nav-bar/nav-bar.component';
 
 import { Container } from '../container/container.styled';
@@ -13,7 +13,7 @@ export const StandardLayout: FunctionComponent<IStandardLayout> = ({
   children,
 }) => {
   return (
-    <Fragment>
+    <>
       <Header>
         <NavBar />
       </Header>
@@ -22,9 +22,9 @@ export const StandardLayout: FunctionComponent<IStandardLayout> = ({
 
       <footer>
         <Container>
-          <FooterText>&copy; 2023 Erick Badilla</FooterText>
+          <FooterText>&copy; 2024 Erick Badilla</FooterText>
         </Container>
       </footer>
-    </Fragment>
+    </>
   );
 };

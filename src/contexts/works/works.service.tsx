@@ -21,7 +21,7 @@ export interface IWork {
   description: string;
   information: string;
   githubUrl: string;
-  websiteUrl: string;
+  websiteUrl?: string;
   technologyStack: string[];
   platform: string;
   details: string;

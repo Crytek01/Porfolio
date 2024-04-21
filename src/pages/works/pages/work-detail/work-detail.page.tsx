@@ -28,6 +28,8 @@ export const WorkDetailPage = () => {
 
   const [work] = useState<IWork | undefined>(worksService.findWork(name));
 
+  const shouldRenderPreviewImages = work && work.previewImage.length > 0;
+
   return (
     <StyledArticle>
       <LogoImage
@@ -81,8 +83,12 @@ export const WorkDetailPage = () => {
       </KeyPointsContainer>
       <Spacer size={6} />
 
-      <PreviewTitle>Preview Images: </PreviewTitle>
-      <Spacer size={3} />
+      {shouldRenderPreviewImages ? (
+        <>
+          <PreviewTitle>Preview Images: </PreviewTitle>
+          <Spacer size={3} />
+        </>
+      ) : null}
 
       {work?.previewImage.map((image) => (
         <PreviewImage
@@ -92,6 +98,8 @@ export const WorkDetailPage = () => {
           type={image.basic.type}
           optimizedSrc={image.optimized.source}
           optimizedType={image.optimized.type}
+          scaleOnHover
+          scaleOnHoverModifier={1.2}
         />
       ))}
     </StyledArticle>

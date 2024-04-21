@@ -22,33 +22,65 @@ export const CVPage: FunctionComponent = () => {
         <SubTitle>Multiplied Solutions (Jun 2022 - Present):</SubTitle>
         <Spacer size={4} />
         <Text>
-          I worked for four months as a full-stack React / Node developer on an
-          internal project about coding interviews, refactoring code, improving
-          authentication backend-side and client-side, implementing real-time
-          coding between the interviewers and the interviewee, and implementing
-          code compilation of multiple languages for the interviewees.
-          <br />
-          <br />
-          For the last few months, I started working with an external client as
-          a Web Developer Consultant with HTML5/ CSS3/ JS and WordPress
-          Gutenberg as CMS.
+          <li>
+            Pioneered the introduction of cutting-edge features, seamlessly
+            integrating a real-time coding editor powered by YJS technology for
+            collaborative editing, and amalgamating diverse APIs to enrich its
+            functionality.
+          </li>
+
+          <Spacer size={2} />
+
+          <li>
+            Proactively maintained the application's ongoing functionality and
+            implemented updates to guarantee peak performance and user
+            satisfaction.
+          </li>
+
+          <Spacer size={2} />
+
+          <li>
+            Led quality assurance initiatives, conducting code reviews and
+            performance optimizations to maintain high standards.
+          </li>
+
+          <Spacer size={2} />
+
+          <li>
+            Leveraged expertise in JavaScript, TypeScript, React, Axios, and
+            Express to amplify application functionality and user experience.
+          </li>
+
+          <Spacer size={2} />
+
+          <li>Integrated diverse APIs.</li>
+
+          <Spacer size={2} />
+
+          <li>
+            Developed and maintained front-end web applications, ensuring
+            responsive design and adherence to design specifications.
+          </li>
         </Text>
         <Spacer size={6} />
 
         <SubTitle>Accenture (Feb 2022 - Jun 2022):</SubTitle>
         <Spacer size={4} />
         <Text>
-          I worked for three months on different client projects as a Web
-          Developer Analyst consultant with React and Angular technologies,
-          refactoring code, fixing bugs, and developing new features.
-          <br />
-          <br />
-          In the React project, I worked on developing a live quiz game app for
-          multiple people connecting simultaneously between them with AWS
-          Amplify as a backend.
-          <br />
-          <br />
-          In the Angular project, I worked on fixing bugs and refactoring code.
+          <li>
+            Played a key role in the creation of a captivating real-time React
+            quiz app game, leveraging AWS Amplify to enhance its functionality
+            and utilizing S3 with CloudFront to improve loading times for
+            diverse users.
+          </li>
+
+          <Spacer size={2} />
+
+          <li>
+            Resolved bugs and delivered continuous maintenance and support for a
+            dynamic Angular codebase, ensuring optimal performance and
+            stability.
+          </li>
         </Text>
         <Spacer size={6} />
 
@@ -64,15 +96,32 @@ export const CVPage: FunctionComponent = () => {
         <Spacer size={4} />
 
         <Text>
-          I worked for nearly six months as a Front End Developer Intern with a
-          Scrum agile team on a complex Angular application about private stocks
-          that makes management easy and intelligent for private companies.
-          <br />
-          <br />
-          And worked proactively fixing bugs at the start, then worked on taking
-          small user stories and owning the whole process responsibility, and
-          then started taking complex user stories and working closely with the
-          Quality Assurance team and Backend team.
+          <li>
+            Played a substantial role in the development of a sophisticated
+            Angular application tailored for private companies' stock
+            management.
+          </li>
+
+          <Spacer size={2} />
+
+          <li>
+            Took ownership of complex user stories and spearheaded collaboration
+            with Quality Assurance and Backend teams.
+          </li>
+
+          <Spacer size={2} />
+
+          <li>
+            Enhanced platform usability and efficiency for effective stock
+            management.
+          </li>
+
+          <Spacer size={2} />
+
+          <li>
+            Contributed to test automation using Cypress to ensure robustness
+            and reliability.
+          </li>
         </Text>
       </section>
     </Article>
